@@ -1,0 +1,3878 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f2a3b4335c16e33dcb93a083f0669d12 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f2a3b4335c16e33dcb93a083f0669d12" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f2a3b4335c16e33dcb93a083f0669d12 = L.map(
+                "map_f2a3b4335c16e33dcb93a083f0669d12",
+                {
+                    center: [53.0666582, 158.5960724],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a5ac308802245f75f43a737e0c8f6919 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var marker_82d01452094c4dedea2d8adbf71770da = L.marker(
+                [52.58, 158.784],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+        var popup_0f9136d3eb3bb04e1e117385fe3c4c4a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d8fef35806eccaa674151620d4cd4732 = $(`<div id="html_d8fef35806eccaa674151620d4cd4732" style="width: 100.0%; height: 100.0%;">Магнитуда: 6.5<br>Глубина: 105</div>`)[0];
+                popup_0f9136d3eb3bb04e1e117385fe3c4c4a.setContent(html_d8fef35806eccaa674151620d4cd4732);
+            
+        
+
+        marker_82d01452094c4dedea2d8adbf71770da.bindPopup(popup_0f9136d3eb3bb04e1e117385fe3c4c4a)
+        ;
+
+        
+    
+    
+            marker_82d01452094c4dedea2d8adbf71770da.bindTooltip(
+                `<div>
+                     52.58, 158.784
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b55684aa2f857e9d02f3db2f3b0e6211 = L.marker(
+                [53.065176, 158.600043],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_e680b52a11cccb2a1562ae67e1c8470f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_b55684aa2f857e9d02f3db2f3b0e6211.setIcon(icon_e680b52a11cccb2a1562ae67e1c8470f);
+        
+    
+        var popup_63774a39590b93c5352f8dff41630836 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_211ec82f1c74d49c6461f8d574bf4aab = $(`<div id="html_211ec82f1c74d49c6461f8d574bf4aab" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_63774a39590b93c5352f8dff41630836.setContent(html_211ec82f1c74d49c6461f8d574bf4aab);
+            
+        
+
+        marker_b55684aa2f857e9d02f3db2f3b0e6211.bindPopup(popup_63774a39590b93c5352f8dff41630836)
+        ;
+
+        
+    
+    
+            marker_b55684aa2f857e9d02f3db2f3b0e6211.bindTooltip(
+                `<div>
+                     Абеля, д. 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbe3e626dfcfb722a59c4b33b78760c7 = L.marker(
+                [53.066664, 158.593701],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_41dd9cbda4bd8d10d1b456a1666cdb01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_dbe3e626dfcfb722a59c4b33b78760c7.setIcon(icon_41dd9cbda4bd8d10d1b456a1666cdb01);
+        
+    
+        var popup_7e6b6e2a982994fe7062a47cb5f1a37a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fcf062aa067157ba6fd829a6ee578d9c = $(`<div id="html_fcf062aa067157ba6fd829a6ee578d9c" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_7e6b6e2a982994fe7062a47cb5f1a37a.setContent(html_fcf062aa067157ba6fd829a6ee578d9c);
+            
+        
+
+        marker_dbe3e626dfcfb722a59c4b33b78760c7.bindPopup(popup_7e6b6e2a982994fe7062a47cb5f1a37a)
+        ;
+
+        
+    
+    
+            marker_dbe3e626dfcfb722a59c4b33b78760c7.bindTooltip(
+                `<div>
+                     Карбышева, д. 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e047badbbab02f6d99c6865baa852c38 = L.marker(
+                [53.06602, 158.593332],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_dc5caeb4201aa3dcc4840a047c13d303 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e047badbbab02f6d99c6865baa852c38.setIcon(icon_dc5caeb4201aa3dcc4840a047c13d303);
+        
+    
+        var popup_1b6c48ae900e994dcc37f426315eef23 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_23a6c7c5f1cb6bf539adb0f4b5933f5f = $(`<div id="html_23a6c7c5f1cb6bf539adb0f4b5933f5f" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_1b6c48ae900e994dcc37f426315eef23.setContent(html_23a6c7c5f1cb6bf539adb0f4b5933f5f);
+            
+        
+
+        marker_e047badbbab02f6d99c6865baa852c38.bindPopup(popup_1b6c48ae900e994dcc37f426315eef23)
+        ;
+
+        
+    
+    
+            marker_e047badbbab02f6d99c6865baa852c38.bindTooltip(
+                `<div>
+                     Карбышева, д. 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f62f09d67256bf35aaaff22ec77ec47 = L.marker(
+                [53.065836, 158.593853],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_bdc6bbb3d60908b89220538f2f12025e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_2f62f09d67256bf35aaaff22ec77ec47.setIcon(icon_bdc6bbb3d60908b89220538f2f12025e);
+        
+    
+        var popup_6d689ed24a6cc6fe0a3bf8e2735b533e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a669b7eb09a1c7ade1f23725dacb4d06 = $(`<div id="html_a669b7eb09a1c7ade1f23725dacb4d06" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_6d689ed24a6cc6fe0a3bf8e2735b533e.setContent(html_a669b7eb09a1c7ade1f23725dacb4d06);
+            
+        
+
+        marker_2f62f09d67256bf35aaaff22ec77ec47.bindPopup(popup_6d689ed24a6cc6fe0a3bf8e2735b533e)
+        ;
+
+        
+    
+    
+            marker_2f62f09d67256bf35aaaff22ec77ec47.bindTooltip(
+                `<div>
+                     Карбышева, д. 14/2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dfbd579826b87bd7c9b232ed2dd1542 = L.marker(
+                [53.06635, 158.594886],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_c2724fb452506dd7fec22f644b6404b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1dfbd579826b87bd7c9b232ed2dd1542.setIcon(icon_c2724fb452506dd7fec22f644b6404b6);
+        
+    
+        var popup_33f521f2dd099a790496da58d6305d8f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a7795baf928543ff5969237754cb7c98 = $(`<div id="html_a7795baf928543ff5969237754cb7c98" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_33f521f2dd099a790496da58d6305d8f.setContent(html_a7795baf928543ff5969237754cb7c98);
+            
+        
+
+        marker_1dfbd579826b87bd7c9b232ed2dd1542.bindPopup(popup_33f521f2dd099a790496da58d6305d8f)
+        ;
+
+        
+    
+    
+            marker_1dfbd579826b87bd7c9b232ed2dd1542.bindTooltip(
+                `<div>
+                     Карбышева, д. 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4958705979ade41e77b6001cd2294239 = L.marker(
+                [53.065782, 158.595587],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_9afd3c75d86c4ca7be1d9209bfc9fba1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4958705979ade41e77b6001cd2294239.setIcon(icon_9afd3c75d86c4ca7be1d9209bfc9fba1);
+        
+    
+        var popup_dceba3a51f475513730125ee6500d1da = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e9dc068f43b584145c9b77c95ba2f9f1 = $(`<div id="html_e9dc068f43b584145c9b77c95ba2f9f1" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_dceba3a51f475513730125ee6500d1da.setContent(html_e9dc068f43b584145c9b77c95ba2f9f1);
+            
+        
+
+        marker_4958705979ade41e77b6001cd2294239.bindPopup(popup_dceba3a51f475513730125ee6500d1da)
+        ;
+
+        
+    
+    
+            marker_4958705979ade41e77b6001cd2294239.bindTooltip(
+                `<div>
+                     Карбышева, д. 10/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3e57c94e54e52113b17970e3205765b = L.marker(
+                [53.06352, 158.599998],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_c39714ce6832706439d43281cf55511c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d3e57c94e54e52113b17970e3205765b.setIcon(icon_c39714ce6832706439d43281cf55511c);
+        
+    
+        var popup_dde177c3cb2e90830d2d0c6804a5e598 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7033c980bbeda58cd04470aa9300ec7a = $(`<div id="html_7033c980bbeda58cd04470aa9300ec7a" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_dde177c3cb2e90830d2d0c6804a5e598.setContent(html_7033c980bbeda58cd04470aa9300ec7a);
+            
+        
+
+        marker_d3e57c94e54e52113b17970e3205765b.bindPopup(popup_dde177c3cb2e90830d2d0c6804a5e598)
+        ;
+
+        
+    
+    
+            marker_d3e57c94e54e52113b17970e3205765b.bindTooltip(
+                `<div>
+                     Карбышева, д. 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88952994b886adf000d2133eaa2cfea0 = L.marker(
+                [53.065268, 158.595389],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_442cf7c39379081ff6ac669833a31c83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_88952994b886adf000d2133eaa2cfea0.setIcon(icon_442cf7c39379081ff6ac669833a31c83);
+        
+    
+        var popup_ec3f83b1b8d2a77b7eb463fe13ccaa45 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4865da5c645892af5ab8a65e83bd88c6 = $(`<div id="html_4865da5c645892af5ab8a65e83bd88c6" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_ec3f83b1b8d2a77b7eb463fe13ccaa45.setContent(html_4865da5c645892af5ab8a65e83bd88c6);
+            
+        
+
+        marker_88952994b886adf000d2133eaa2cfea0.bindPopup(popup_ec3f83b1b8d2a77b7eb463fe13ccaa45)
+        ;
+
+        
+    
+    
+            marker_88952994b886adf000d2133eaa2cfea0.bindTooltip(
+                `<div>
+                     Карбышева, д. 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64678185b274285ade6ac56a1568de0f = L.marker(
+                [53.065636, 158.596701],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_b82042b49bf162ee9a3aeb617e334ed3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_64678185b274285ade6ac56a1568de0f.setIcon(icon_b82042b49bf162ee9a3aeb617e334ed3);
+        
+    
+        var popup_6a7c7baf6ae59e2f594a93eb1d0ab811 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f05ac6a55b46ddf1d15cedfb83db1e61 = $(`<div id="html_f05ac6a55b46ddf1d15cedfb83db1e61" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_6a7c7baf6ae59e2f594a93eb1d0ab811.setContent(html_f05ac6a55b46ddf1d15cedfb83db1e61);
+            
+        
+
+        marker_64678185b274285ade6ac56a1568de0f.bindPopup(popup_6a7c7baf6ae59e2f594a93eb1d0ab811)
+        ;
+
+        
+    
+    
+            marker_64678185b274285ade6ac56a1568de0f.bindTooltip(
+                `<div>
+                     Карбышева, д. 6/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fa703db5486619a400cff0e81367574 = L.marker(
+                [53.065955, 158.590107],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_df4c684f32a0f772008df8388a258bd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_9fa703db5486619a400cff0e81367574.setIcon(icon_df4c684f32a0f772008df8388a258bd5);
+        
+    
+        var popup_43222e662c750d123ce0fe3849669810 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_10fec5c94abcdba68cdc996663b70549 = $(`<div id="html_10fec5c94abcdba68cdc996663b70549" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_43222e662c750d123ce0fe3849669810.setContent(html_10fec5c94abcdba68cdc996663b70549);
+            
+        
+
+        marker_9fa703db5486619a400cff0e81367574.bindPopup(popup_43222e662c750d123ce0fe3849669810)
+        ;
+
+        
+    
+    
+            marker_9fa703db5486619a400cff0e81367574.bindTooltip(
+                `<div>
+                     Маршала Блюхера, д. 45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_013c3a2a05df0ad032c91bbe62183bcf = L.marker(
+                [53.064603, 158.588805],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_301d445374ebd5be1682abd4640f63c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_013c3a2a05df0ad032c91bbe62183bcf.setIcon(icon_301d445374ebd5be1682abd4640f63c0);
+        
+    
+        var popup_620adcdb938a44d1ebcb5d07ce0a4292 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7d63d1757d603aa5a10dccd91a6c5568 = $(`<div id="html_7d63d1757d603aa5a10dccd91a6c5568" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9-10<br>Интенсивность: 6.5</div>`)[0];
+                popup_620adcdb938a44d1ebcb5d07ce0a4292.setContent(html_7d63d1757d603aa5a10dccd91a6c5568);
+            
+        
+
+        marker_013c3a2a05df0ad032c91bbe62183bcf.bindPopup(popup_620adcdb938a44d1ebcb5d07ce0a4292)
+        ;
+
+        
+    
+    
+            marker_013c3a2a05df0ad032c91bbe62183bcf.bindTooltip(
+                `<div>
+                     Маршала Блюхера, д. 41
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff46d78a44a4591765de1976835fd15e = L.marker(
+                [53.063531, 158.588625],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_374f1b5cf299c2bfe1a6bfb568529b07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ff46d78a44a4591765de1976835fd15e.setIcon(icon_374f1b5cf299c2bfe1a6bfb568529b07);
+        
+    
+        var popup_40e603cd3e2a47616b79c0dcdf4751a7 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c4ce81135317e6277831a996452a39b5 = $(`<div id="html_c4ce81135317e6277831a996452a39b5" style="width: 100.0%; height: 100.0%;">Видимые повреждения конструктивных элементов отсутствуют.  Работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_40e603cd3e2a47616b79c0dcdf4751a7.setContent(html_c4ce81135317e6277831a996452a39b5);
+            
+        
+
+        marker_ff46d78a44a4591765de1976835fd15e.bindPopup(popup_40e603cd3e2a47616b79c0dcdf4751a7)
+        ;
+
+        
+    
+    
+            marker_ff46d78a44a4591765de1976835fd15e.bindTooltip(
+                `<div>
+                     Маршала Блюхера, д. 39
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_594f3160e4a5adbcb1b08a928a4db6bb = L.marker(
+                [53.062627, 158.588481],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_750fe56bd6be6b84ac1c26d163d90cdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_594f3160e4a5adbcb1b08a928a4db6bb.setIcon(icon_750fe56bd6be6b84ac1c26d163d90cdd);
+        
+    
+        var popup_91687ba8352115dbe087921f472c11bd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_603d17469c189e562f69a0696e9fdff7 = $(`<div id="html_603d17469c189e562f69a0696e9fdff7" style="width: 100.0%; height: 100.0%;">Видимые повреждения конструктивных элементов отсутствуют.  Работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_91687ba8352115dbe087921f472c11bd.setContent(html_603d17469c189e562f69a0696e9fdff7);
+            
+        
+
+        marker_594f3160e4a5adbcb1b08a928a4db6bb.bindPopup(popup_91687ba8352115dbe087921f472c11bd)
+        ;
+
+        
+    
+    
+            marker_594f3160e4a5adbcb1b08a928a4db6bb.bindTooltip(
+                `<div>
+                     Маршала Блюхера, д. 37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b916f48fad9421db8439eac59b80e452 = L.marker(
+                [53.072773, 158.617928],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_6a83b10edb1c59b7e777d07659bcc8f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_b916f48fad9421db8439eac59b80e452.setIcon(icon_6a83b10edb1c59b7e777d07659bcc8f1);
+        
+    
+        var popup_3b78473aeca26f6c8dbf74e72223a440 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d77cdada696f1d8f471bb902d5d2e84c = $(`<div id="html_d77cdada696f1d8f471bb902d5d2e84c" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_3b78473aeca26f6c8dbf74e72223a440.setContent(html_d77cdada696f1d8f471bb902d5d2e84c);
+            
+        
+
+        marker_b916f48fad9421db8439eac59b80e452.bindPopup(popup_3b78473aeca26f6c8dbf74e72223a440)
+        ;
+
+        
+    
+    
+            marker_b916f48fad9421db8439eac59b80e452.bindTooltip(
+                `<div>
+                     Кавказская, д. 20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8917095212f068c872fb2a24f16f51c4 = L.marker(
+                [53.071831, 158.616689],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_529afed81c5be7cc15da773dbe75cf55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8917095212f068c872fb2a24f16f51c4.setIcon(icon_529afed81c5be7cc15da773dbe75cf55);
+        
+    
+        var popup_3c62811baab4c270cb2fcfed222d102c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c4ed022e7cb78d01447ab309adfc62d6 = $(`<div id="html_c4ed022e7cb78d01447ab309adfc62d6" style="width: 100.0%; height: 100.0%;">Видимые повреждения конструктивных элементов отсутствуют.  Работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_3c62811baab4c270cb2fcfed222d102c.setContent(html_c4ed022e7cb78d01447ab309adfc62d6);
+            
+        
+
+        marker_8917095212f068c872fb2a24f16f51c4.bindPopup(popup_3c62811baab4c270cb2fcfed222d102c)
+        ;
+
+        
+    
+    
+            marker_8917095212f068c872fb2a24f16f51c4.bindTooltip(
+                `<div>
+                     Кавказская, д. 30/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be9335395c6fbd128b7ed30bf2d324de = L.marker(
+                [53.071528, 158.618153],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_cead2b29ca14bc57aff92bad693a26f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be9335395c6fbd128b7ed30bf2d324de.setIcon(icon_cead2b29ca14bc57aff92bad693a26f9);
+        
+    
+        var popup_7ea6e03cb04cfc2a15797320c6c09130 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_59db614ab02b0a4d28cec70ea3c9bb56 = $(`<div id="html_59db614ab02b0a4d28cec70ea3c9bb56" style="width: 100.0%; height: 100.0%;">Видимые повреждения конструктивных элементов отсутствуют.  Работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_7ea6e03cb04cfc2a15797320c6c09130.setContent(html_59db614ab02b0a4d28cec70ea3c9bb56);
+            
+        
+
+        marker_be9335395c6fbd128b7ed30bf2d324de.bindPopup(popup_7ea6e03cb04cfc2a15797320c6c09130)
+        ;
+
+        
+    
+    
+            marker_be9335395c6fbd128b7ed30bf2d324de.bindTooltip(
+                `<div>
+                     Кавказская, д. 32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fa5f3729d4523b10e9dbe246c588477 = L.marker(
+                [53.071345, 158.616715],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_82ea487b5128db7ebbb28c1224e84c55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_3fa5f3729d4523b10e9dbe246c588477.setIcon(icon_82ea487b5128db7ebbb28c1224e84c55);
+        
+    
+        var popup_0d858e7cf81de7b2c41200043e0f9318 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fc120959e252c431dab6c47c3633a9d9 = $(`<div id="html_fc120959e252c431dab6c47c3633a9d9" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_0d858e7cf81de7b2c41200043e0f9318.setContent(html_fc120959e252c431dab6c47c3633a9d9);
+            
+        
+
+        marker_3fa5f3729d4523b10e9dbe246c588477.bindPopup(popup_0d858e7cf81de7b2c41200043e0f9318)
+        ;
+
+        
+    
+    
+            marker_3fa5f3729d4523b10e9dbe246c588477.bindTooltip(
+                `<div>
+                     Кавказская, д. 34/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cb3f126f64f17aa07e596e093029fde = L.marker(
+                [53.068563, 158.613814],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_8be7db6a0f4b6561d00d3e169423981a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7cb3f126f64f17aa07e596e093029fde.setIcon(icon_8be7db6a0f4b6561d00d3e169423981a);
+        
+    
+        var popup_31c5cede922f733ea31ae10dfdf09a73 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f910d1b0233ce6acf38e163af0b07264 = $(`<div id="html_f910d1b0233ce6acf38e163af0b07264" style="width: 100.0%; height: 100.0%;">Видимые повреждения конструктивных элементов отсутствуют.  Работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_31c5cede922f733ea31ae10dfdf09a73.setContent(html_f910d1b0233ce6acf38e163af0b07264);
+            
+        
+
+        marker_7cb3f126f64f17aa07e596e093029fde.bindPopup(popup_31c5cede922f733ea31ae10dfdf09a73)
+        ;
+
+        
+    
+    
+            marker_7cb3f126f64f17aa07e596e093029fde.bindTooltip(
+                `<div>
+                     проспект Победы, д. 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bccac0022788d3222fb43449452d8c2 = L.marker(
+                [53.06358, 158.586101],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_ed2f13f9e16fc64e63283ca6c3062e5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1bccac0022788d3222fb43449452d8c2.setIcon(icon_ed2f13f9e16fc64e63283ca6c3062e5e);
+        
+    
+        var popup_2daf74df69beeccb96bcfa86a30e118d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_529bcb0f1fd886c17011c7ac0c5e8405 = $(`<div id="html_529bcb0f1fd886c17011c7ac0c5e8405" style="width: 100.0%; height: 100.0%;">Видимые повреждения конструктивных элементов отсутствуют.  Работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_2daf74df69beeccb96bcfa86a30e118d.setContent(html_529bcb0f1fd886c17011c7ac0c5e8405);
+            
+        
+
+        marker_1bccac0022788d3222fb43449452d8c2.bindPopup(popup_2daf74df69beeccb96bcfa86a30e118d)
+        ;
+
+        
+    
+    
+            marker_1bccac0022788d3222fb43449452d8c2.bindTooltip(
+                `<div>
+                     Арсеньева, д. 35
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7784cc78c1014ac2fd55770c2b4345a = L.marker(
+                [53.062703, 158.586523],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_710634b2d98e4efcca7127ebf95cc209 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f7784cc78c1014ac2fd55770c2b4345a.setIcon(icon_710634b2d98e4efcca7127ebf95cc209);
+        
+    
+        var popup_b198857792c5619a4ac0f4f12690a19c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_30e337a5ec19ad37ae1612f069bca681 = $(`<div id="html_30e337a5ec19ad37ae1612f069bca681" style="width: 100.0%; height: 100.0%;">Видимые повреждения конструктивных элементов отсутствуют.  Работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_b198857792c5619a4ac0f4f12690a19c.setContent(html_30e337a5ec19ad37ae1612f069bca681);
+            
+        
+
+        marker_f7784cc78c1014ac2fd55770c2b4345a.bindPopup(popup_b198857792c5619a4ac0f4f12690a19c)
+        ;
+
+        
+    
+    
+            marker_f7784cc78c1014ac2fd55770c2b4345a.bindTooltip(
+                `<div>
+                     Арсеньева, д. 37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3f4c8b11898d9de26b0386836705d13 = L.marker(
+                [53.068298, 158.60625],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_d1e5f1e5b3081286173334d9b5f73382 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_b3f4c8b11898d9de26b0386836705d13.setIcon(icon_d1e5f1e5b3081286173334d9b5f73382);
+        
+    
+        var popup_b04689934a9a29564190a2ba62660306 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_60ea4934dbace610e6f1fac7da2e3bf5 = $(`<div id="html_60ea4934dbace610e6f1fac7da2e3bf5" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_b04689934a9a29564190a2ba62660306.setContent(html_60ea4934dbace610e6f1fac7da2e3bf5);
+            
+        
+
+        marker_b3f4c8b11898d9de26b0386836705d13.bindPopup(popup_b04689934a9a29564190a2ba62660306)
+        ;
+
+        
+    
+    
+            marker_b3f4c8b11898d9de26b0386836705d13.bindTooltip(
+                `<div>
+                     бульвар Пийпа, д. 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d69cb53756a6f8e456e93eb97df6a77a = L.marker(
+                [53.067795, 158.605514],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_18c4695b926fd4be880d2b9d786f5901 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d69cb53756a6f8e456e93eb97df6a77a.setIcon(icon_18c4695b926fd4be880d2b9d786f5901);
+        
+    
+        var popup_f9c03183293b71223871bb7851d630b3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_159dd62a88fe7684b625d302bdadb7a7 = $(`<div id="html_159dd62a88fe7684b625d302bdadb7a7" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_f9c03183293b71223871bb7851d630b3.setContent(html_159dd62a88fe7684b625d302bdadb7a7);
+            
+        
+
+        marker_d69cb53756a6f8e456e93eb97df6a77a.bindPopup(popup_f9c03183293b71223871bb7851d630b3)
+        ;
+
+        
+    
+    
+            marker_d69cb53756a6f8e456e93eb97df6a77a.bindTooltip(
+                `<div>
+                     бульвар Пийпа, д. 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49af0c5e266b0d2ff3ca16041eeff122 = L.marker(
+                [53.066464, 158.594285],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_bdd77d03dc0adb997764c27a83e95bc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_49af0c5e266b0d2ff3ca16041eeff122.setIcon(icon_bdd77d03dc0adb997764c27a83e95bc9);
+        
+    
+        var popup_e65aa8997d9310209bb2bf3f9e8ff918 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2d396212ee283a14549e07ca11f51937 = $(`<div id="html_2d396212ee283a14549e07ca11f51937" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_e65aa8997d9310209bb2bf3f9e8ff918.setContent(html_2d396212ee283a14549e07ca11f51937);
+            
+        
+
+        marker_49af0c5e266b0d2ff3ca16041eeff122.bindPopup(popup_e65aa8997d9310209bb2bf3f9e8ff918)
+        ;
+
+        
+    
+    
+            marker_49af0c5e266b0d2ff3ca16041eeff122.bindTooltip(
+                `<div>
+                     Карбышева, д. 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7073f5ac945786e654c2e5f2cae0d191 = L.marker(
+                [53.061394, 158.589101],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_9f0a25614b700c86beb8bcf2f8a228f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7073f5ac945786e654c2e5f2cae0d191.setIcon(icon_9f0a25614b700c86beb8bcf2f8a228f7);
+        
+    
+        var popup_0a5b911237fbb922b4f105aa4d84cb49 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9d527f3960a8df7b81f75623afbf9975 = $(`<div id="html_9d527f3960a8df7b81f75623afbf9975" style="width: 100.0%; height: 100.0%;">Видимые повреждения конструктивных элементов отсутствуют.  Работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_0a5b911237fbb922b4f105aa4d84cb49.setContent(html_9d527f3960a8df7b81f75623afbf9975);
+            
+        
+
+        marker_7073f5ac945786e654c2e5f2cae0d191.bindPopup(popup_0a5b911237fbb922b4f105aa4d84cb49)
+        ;
+
+        
+    
+    
+            marker_7073f5ac945786e654c2e5f2cae0d191.bindTooltip(
+                `<div>
+                     Маршала Блюхера, д. 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_909979558afd54fa5aa899ec4fac06cb = L.marker(
+                [53.063152, 158.600833],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_cbf3889ffe11faab484b6b926d40407d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_909979558afd54fa5aa899ec4fac06cb.setIcon(icon_cbf3889ffe11faab484b6b926d40407d);
+        
+    
+        var popup_428221c54307f5c123ca162f514202a1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3d337974fa2e1741d0cc14934f8f8784 = $(`<div id="html_3d337974fa2e1741d0cc14934f8f8784" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_428221c54307f5c123ca162f514202a1.setContent(html_3d337974fa2e1741d0cc14934f8f8784);
+            
+        
+
+        marker_909979558afd54fa5aa899ec4fac06cb.bindPopup(popup_428221c54307f5c123ca162f514202a1)
+        ;
+
+        
+    
+    
+            marker_909979558afd54fa5aa899ec4fac06cb.bindTooltip(
+                `<div>
+                     Флотская, д. 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4415721adfdfa7eb3d97ad0df9431dc = L.marker(
+                [53.062817, 158.600743],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_c064f32f233a40edb7d446979c68e421 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a4415721adfdfa7eb3d97ad0df9431dc.setIcon(icon_c064f32f233a40edb7d446979c68e421);
+        
+    
+        var popup_20e052d6f549f91ef6cda67dfc465110 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f24ecd5e332cc8e36edc7f51b0e6b5e5 = $(`<div id="html_f24ecd5e332cc8e36edc7f51b0e6b5e5" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_20e052d6f549f91ef6cda67dfc465110.setContent(html_f24ecd5e332cc8e36edc7f51b0e6b5e5);
+            
+        
+
+        marker_a4415721adfdfa7eb3d97ad0df9431dc.bindPopup(popup_20e052d6f549f91ef6cda67dfc465110)
+        ;
+
+        
+    
+    
+            marker_a4415721adfdfa7eb3d97ad0df9431dc.bindTooltip(
+                `<div>
+                     Флотская, д. 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc7fd8268facfdc6c63d895b4698464f = L.marker(
+                [53.062411, 158.600627],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_8d57a1122b5c0e333c156d7026ead0e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_dc7fd8268facfdc6c63d895b4698464f.setIcon(icon_8d57a1122b5c0e333c156d7026ead0e9);
+        
+    
+        var popup_96c3ed86ed46670f1d7a8b0dd0cc8417 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3d24dc5b272aa91915a2699d2b7b6ad8 = $(`<div id="html_3d24dc5b272aa91915a2699d2b7b6ad8" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_96c3ed86ed46670f1d7a8b0dd0cc8417.setContent(html_3d24dc5b272aa91915a2699d2b7b6ad8);
+            
+        
+
+        marker_dc7fd8268facfdc6c63d895b4698464f.bindPopup(popup_96c3ed86ed46670f1d7a8b0dd0cc8417)
+        ;
+
+        
+    
+    
+            marker_dc7fd8268facfdc6c63d895b4698464f.bindTooltip(
+                `<div>
+                     Флотская, д. 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcd86276d09e7bf3607264d5a0949af2 = L.marker(
+                [53.061383, 158.599962],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_2a71ef7e08bcb6f9cfb6c7381e793c04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_dcd86276d09e7bf3607264d5a0949af2.setIcon(icon_2a71ef7e08bcb6f9cfb6c7381e793c04);
+        
+    
+        var popup_1fec370966d8b7afa25bcf646e86644d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_658205912a1aea50f63c128cdba5116e = $(`<div id="html_658205912a1aea50f63c128cdba5116e" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_1fec370966d8b7afa25bcf646e86644d.setContent(html_658205912a1aea50f63c128cdba5116e);
+            
+        
+
+        marker_dcd86276d09e7bf3607264d5a0949af2.bindPopup(popup_1fec370966d8b7afa25bcf646e86644d)
+        ;
+
+        
+    
+    
+            marker_dcd86276d09e7bf3607264d5a0949af2.bindTooltip(
+                `<div>
+                     Флотская, д. 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bb79f8bef1587ad3a14a3b38de27a48 = L.marker(
+                [53.062725, 158.598031],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_c5be40d2204f0a5f8f189acce32cb41e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4bb79f8bef1587ad3a14a3b38de27a48.setIcon(icon_c5be40d2204f0a5f8f189acce32cb41e);
+        
+    
+        var popup_efa86ec02a4bb2569ff13eb1e881c34c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_40ee1e9f7cb8db60cd0e2c1f54dcb030 = $(`<div id="html_40ee1e9f7cb8db60cd0e2c1f54dcb030" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_efa86ec02a4bb2569ff13eb1e881c34c.setContent(html_40ee1e9f7cb8db60cd0e2c1f54dcb030);
+            
+        
+
+        marker_4bb79f8bef1587ad3a14a3b38de27a48.bindPopup(popup_efa86ec02a4bb2569ff13eb1e881c34c)
+        ;
+
+        
+    
+    
+            marker_4bb79f8bef1587ad3a14a3b38de27a48.bindTooltip(
+                `<div>
+                     Якорная, д. 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08dfdedc08177bfa6e8f355dea347792 = L.marker(
+                [53.062373, 158.598022],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_6a55b8d5785fd419c5c7c7ad13eaef9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_08dfdedc08177bfa6e8f355dea347792.setIcon(icon_6a55b8d5785fd419c5c7c7ad13eaef9a);
+        
+    
+        var popup_dd7780a6a070a2bb08355815f73d9c69 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f1f0910a6c1c13674934834560ff3c5d = $(`<div id="html_f1f0910a6c1c13674934834560ff3c5d" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_dd7780a6a070a2bb08355815f73d9c69.setContent(html_f1f0910a6c1c13674934834560ff3c5d);
+            
+        
+
+        marker_08dfdedc08177bfa6e8f355dea347792.bindPopup(popup_dd7780a6a070a2bb08355815f73d9c69)
+        ;
+
+        
+    
+    
+            marker_08dfdedc08177bfa6e8f355dea347792.bindTooltip(
+                `<div>
+                     Якорная, д. 7/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a39d15a0ecd20386c3e1349cb12ce1d1 = L.marker(
+                [53.062644, 158.598587],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_b55db8033fc2c40540c724f6fa8c9e0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a39d15a0ecd20386c3e1349cb12ce1d1.setIcon(icon_b55db8033fc2c40540c724f6fa8c9e0a);
+        
+    
+        var popup_dc14e7b7a27bfd1c8ff2a64a2997b556 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1261336bea0b7c359711e078bc788dda = $(`<div id="html_1261336bea0b7c359711e078bc788dda" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_dc14e7b7a27bfd1c8ff2a64a2997b556.setContent(html_1261336bea0b7c359711e078bc788dda);
+            
+        
+
+        marker_a39d15a0ecd20386c3e1349cb12ce1d1.bindPopup(popup_dc14e7b7a27bfd1c8ff2a64a2997b556)
+        ;
+
+        
+    
+    
+            marker_a39d15a0ecd20386c3e1349cb12ce1d1.bindTooltip(
+                `<div>
+                     Якорная, д. 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6eba9e5c3d3109d2739c680851b9900d = L.marker(
+                [53.062541, 158.599207],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_9e5bf90ee7b5c7be53ab16b65b8454a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6eba9e5c3d3109d2739c680851b9900d.setIcon(icon_9e5bf90ee7b5c7be53ab16b65b8454a9);
+        
+    
+        var popup_603456dc96f617ce9eee49ee669ab9ef = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7c961aed6f022b182bc9b6b31845e57f = $(`<div id="html_7c961aed6f022b182bc9b6b31845e57f" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_603456dc96f617ce9eee49ee669ab9ef.setContent(html_7c961aed6f022b182bc9b6b31845e57f);
+            
+        
+
+        marker_6eba9e5c3d3109d2739c680851b9900d.bindPopup(popup_603456dc96f617ce9eee49ee669ab9ef)
+        ;
+
+        
+    
+    
+            marker_6eba9e5c3d3109d2739c680851b9900d.bindTooltip(
+                `<div>
+                     Якорная, д. 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80aee4dbe82fd2fafc670bb8e88dd22b = L.marker(
+                [53.062054, 158.59804],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_764da4048805bec1a91ef7cf63654eca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_80aee4dbe82fd2fafc670bb8e88dd22b.setIcon(icon_764da4048805bec1a91ef7cf63654eca);
+        
+    
+        var popup_2be09cccdc909de5ac7ceafe29c45d26 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b61c5f9c047994fbc6c9909c1618aa03 = $(`<div id="html_b61c5f9c047994fbc6c9909c1618aa03" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_2be09cccdc909de5ac7ceafe29c45d26.setContent(html_b61c5f9c047994fbc6c9909c1618aa03);
+            
+        
+
+        marker_80aee4dbe82fd2fafc670bb8e88dd22b.bindPopup(popup_2be09cccdc909de5ac7ceafe29c45d26)
+        ;
+
+        
+    
+    
+            marker_80aee4dbe82fd2fafc670bb8e88dd22b.bindTooltip(
+                `<div>
+                     Якорная, д. 7/2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9cbcac8881855cec7242c7c07311b63 = L.marker(
+                [53.062276, 158.599683],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_476a4583c368375547398e94fe13ce04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d9cbcac8881855cec7242c7c07311b63.setIcon(icon_476a4583c368375547398e94fe13ce04);
+        
+    
+        var popup_f58a0a7d78ba1e850a8b77f9dc470198 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_09d3b9a895d8e4ca4a1496c5f5db201d = $(`<div id="html_09d3b9a895d8e4ca4a1496c5f5db201d" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_f58a0a7d78ba1e850a8b77f9dc470198.setContent(html_09d3b9a895d8e4ca4a1496c5f5db201d);
+            
+        
+
+        marker_d9cbcac8881855cec7242c7c07311b63.bindPopup(popup_f58a0a7d78ba1e850a8b77f9dc470198)
+        ;
+
+        
+    
+    
+            marker_d9cbcac8881855cec7242c7c07311b63.bindTooltip(
+                `<div>
+                     Якорная, д. 1/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de96c3ed4282ccccb4fdfd15b900ea1c = L.marker(
+                [53.072205, 158.60342],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_6cd8ef5137963a32e4b6da102bac5f76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_de96c3ed4282ccccb4fdfd15b900ea1c.setIcon(icon_6cd8ef5137963a32e4b6da102bac5f76);
+        
+    
+        var popup_68baf8ab33a0f0ce8e6657e635f956a7 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2ff0cd69465b501e273ce08ca2aca070 = $(`<div id="html_2ff0cd69465b501e273ce08ca2aca070" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_68baf8ab33a0f0ce8e6657e635f956a7.setContent(html_2ff0cd69465b501e273ce08ca2aca070);
+            
+        
+
+        marker_de96c3ed4282ccccb4fdfd15b900ea1c.bindPopup(popup_68baf8ab33a0f0ce8e6657e635f956a7)
+        ;
+
+        
+    
+    
+            marker_de96c3ed4282ccccb4fdfd15b900ea1c.bindTooltip(
+                `<div>
+                     Академика Заварицкого А.Н., д. 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_579d5cdcf1099dc6396c292a7b95181e = L.marker(
+                [53.072881, 158.604184],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_df94f33a67db466c8fbd6c3e8966099d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_579d5cdcf1099dc6396c292a7b95181e.setIcon(icon_df94f33a67db466c8fbd6c3e8966099d);
+        
+    
+        var popup_729cf9b112830dd870167fd5fad4da4f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1585634b88654adca5294ad19892a700 = $(`<div id="html_1585634b88654adca5294ad19892a700" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_729cf9b112830dd870167fd5fad4da4f.setContent(html_1585634b88654adca5294ad19892a700);
+            
+        
+
+        marker_579d5cdcf1099dc6396c292a7b95181e.bindPopup(popup_729cf9b112830dd870167fd5fad4da4f)
+        ;
+
+        
+    
+    
+            marker_579d5cdcf1099dc6396c292a7b95181e.bindTooltip(
+                `<div>
+                     Академика Заварицкого А.Н., д. 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c106b8909e7968329dc7f95e9c500ca0 = L.marker(
+                [53.061913, 158.586784],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_81572ca3a634399d29b647fe9d828c49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_c106b8909e7968329dc7f95e9c500ca0.setIcon(icon_81572ca3a634399d29b647fe9d828c49);
+        
+    
+        var popup_05cff711e25b4b975d9e03d7df7442d9 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_05b96b77ccb0971150edb03361fe1305 = $(`<div id="html_05b96b77ccb0971150edb03361fe1305" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9-10<br>Интенсивность: 6.5</div>`)[0];
+                popup_05cff711e25b4b975d9e03d7df7442d9.setContent(html_05b96b77ccb0971150edb03361fe1305);
+            
+        
+
+        marker_c106b8909e7968329dc7f95e9c500ca0.bindPopup(popup_05cff711e25b4b975d9e03d7df7442d9)
+        ;
+
+        
+    
+    
+            marker_c106b8909e7968329dc7f95e9c500ca0.bindTooltip(
+                `<div>
+                     Арсеньева, д. 39
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98e8435439c48f3e0756c68fbfbb8183 = L.marker(
+                [53.072654, 158.609062],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_d57b8a4c631440004f6888c8e26f5473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_98e8435439c48f3e0756c68fbfbb8183.setIcon(icon_d57b8a4c631440004f6888c8e26f5473);
+        
+    
+        var popup_17b71007d5c3431c0446c6e38a5f1e84 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_178023b815f561d756a252bef28b27aa = $(`<div id="html_178023b815f561d756a252bef28b27aa" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_17b71007d5c3431c0446c6e38a5f1e84.setContent(html_178023b815f561d756a252bef28b27aa);
+            
+        
+
+        marker_98e8435439c48f3e0756c68fbfbb8183.bindPopup(popup_17b71007d5c3431c0446c6e38a5f1e84)
+        ;
+
+        
+    
+    
+            marker_98e8435439c48f3e0756c68fbfbb8183.bindTooltip(
+                `<div>
+                     Чубарова, д. 5/2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_931320e41a683257113c957e03d4433e = L.marker(
+                [53.072811, 158.606852],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_2dfc4fa9a3838476f8caf36cc13d6ead = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_931320e41a683257113c957e03d4433e.setIcon(icon_2dfc4fa9a3838476f8caf36cc13d6ead);
+        
+    
+        var popup_7fc30e50782e4694f5d81c8c0803d6f4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_926958cf3687e7f8842bf8a8f9ba8cc2 = $(`<div id="html_926958cf3687e7f8842bf8a8f9ba8cc2" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_7fc30e50782e4694f5d81c8c0803d6f4.setContent(html_926958cf3687e7f8842bf8a8f9ba8cc2);
+            
+        
+
+        marker_931320e41a683257113c957e03d4433e.bindPopup(popup_7fc30e50782e4694f5d81c8c0803d6f4)
+        ;
+
+        
+    
+    
+            marker_931320e41a683257113c957e03d4433e.bindTooltip(
+                `<div>
+                     Чубарова, д. 5/3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13862253bf2eea8d983bc933b6a819a6 = L.marker(
+                [53.070744, 158.607858],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_26971114aa949395d060cb2e99d87981 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_13862253bf2eea8d983bc933b6a819a6.setIcon(icon_26971114aa949395d060cb2e99d87981);
+        
+    
+        var popup_e82295fe035fedb16484ca4887e827ba = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_22f65ddbcfc880eb251d610a98aab7a8 = $(`<div id="html_22f65ddbcfc880eb251d610a98aab7a8" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_e82295fe035fedb16484ca4887e827ba.setContent(html_22f65ddbcfc880eb251d610a98aab7a8);
+            
+        
+
+        marker_13862253bf2eea8d983bc933b6a819a6.bindPopup(popup_e82295fe035fedb16484ca4887e827ba)
+        ;
+
+        
+    
+    
+            marker_13862253bf2eea8d983bc933b6a819a6.bindTooltip(
+                `<div>
+                     проспект Победы, д. 8/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94e6c0f154c6b5dffd59e2027eb50da4 = L.marker(
+                [53.060955, 158.600178],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_4803625e485eeb624ee79d91cb286cdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_94e6c0f154c6b5dffd59e2027eb50da4.setIcon(icon_4803625e485eeb624ee79d91cb286cdd);
+        
+    
+        var popup_20614eb340b0a62504901d87cb6c44cb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_48e29b2fec0720f29b3d5cf70a83b9e4 = $(`<div id="html_48e29b2fec0720f29b3d5cf70a83b9e4" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_20614eb340b0a62504901d87cb6c44cb.setContent(html_48e29b2fec0720f29b3d5cf70a83b9e4);
+            
+        
+
+        marker_94e6c0f154c6b5dffd59e2027eb50da4.bindPopup(popup_20614eb340b0a62504901d87cb6c44cb)
+        ;
+
+        
+    
+    
+            marker_94e6c0f154c6b5dffd59e2027eb50da4.bindTooltip(
+                `<div>
+                     Флотская, д. 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa46a03f6e41a4293f39d7af56d3d9be = L.marker(
+                [53.06075, 158.59945],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_28303670f802a8abc5d6cd0a52276baf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_aa46a03f6e41a4293f39d7af56d3d9be.setIcon(icon_28303670f802a8abc5d6cd0a52276baf);
+        
+    
+        var popup_949aa528aa5b4ea51cd55801950716fc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9a413ee8011084bfd81cb1f8f1cac9f6 = $(`<div id="html_9a413ee8011084bfd81cb1f8f1cac9f6" style="width: 100.0%; height: 100.0%;">Отсутствие видимых повреждений<br>Сейсмостойкость здания: 9<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_949aa528aa5b4ea51cd55801950716fc.setContent(html_9a413ee8011084bfd81cb1f8f1cac9f6);
+            
+        
+
+        marker_aa46a03f6e41a4293f39d7af56d3d9be.bindPopup(popup_949aa528aa5b4ea51cd55801950716fc)
+        ;
+
+        
+    
+    
+            marker_aa46a03f6e41a4293f39d7af56d3d9be.bindTooltip(
+                `<div>
+                     Флотская, д. 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cb96abf8b5a98484eb210d6db1d9edb = L.marker(
+                [53.068921, 158.600465],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_ba2e5894d3735a56754ee3d76b2c32d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4cb96abf8b5a98484eb210d6db1d9edb.setIcon(icon_ba2e5894d3735a56754ee3d76b2c32d7);
+        
+    
+        var popup_3bc9f12090b5d28798168416cc1776a5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9d0f5a9e359ce8b464b809e8e897687a = $(`<div id="html_9d0f5a9e359ce8b464b809e8e897687a" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 131.22 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_3bc9f12090b5d28798168416cc1776a5.setContent(html_9d0f5a9e359ce8b464b809e8e897687a);
+            
+        
+
+        marker_4cb96abf8b5a98484eb210d6db1d9edb.bindPopup(popup_3bc9f12090b5d28798168416cc1776a5)
+        ;
+
+        
+    
+    
+            marker_4cb96abf8b5a98484eb210d6db1d9edb.bindTooltip(
+                `<div>
+                     Абеля, д. 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f00094d789f4929b64642db73d02e907 = L.marker(
+                [53.065301, 158.600699],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_42a5d623cbc08fd6af1bbb503a4f8f1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f00094d789f4929b64642db73d02e907.setIcon(icon_42a5d623cbc08fd6af1bbb503a4f8f1b);
+        
+    
+        var popup_b0701895e612ec6423b686d28598af30 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4b650e9264ace62f2578103b32eeaf8c = $(`<div id="html_4b650e9264ace62f2578103b32eeaf8c" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_b0701895e612ec6423b686d28598af30.setContent(html_4b650e9264ace62f2578103b32eeaf8c);
+            
+        
+
+        marker_f00094d789f4929b64642db73d02e907.bindPopup(popup_b0701895e612ec6423b686d28598af30)
+        ;
+
+        
+    
+    
+            marker_f00094d789f4929b64642db73d02e907.bindTooltip(
+                `<div>
+                     Абеля, д. 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ca290b45197a4bfd58d56e46948195e = L.marker(
+                [53.06483, 158.600303],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_1fffcc09bc1c8438826bc4247a7fb6e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7ca290b45197a4bfd58d56e46948195e.setIcon(icon_1fffcc09bc1c8438826bc4247a7fb6e5);
+        
+    
+        var popup_40f940ffe535da10827c1b448b7bf4b9 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ec38629fe9283ced4b3e133e47047e89 = $(`<div id="html_ec38629fe9283ced4b3e133e47047e89" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_40f940ffe535da10827c1b448b7bf4b9.setContent(html_ec38629fe9283ced4b3e133e47047e89);
+            
+        
+
+        marker_7ca290b45197a4bfd58d56e46948195e.bindPopup(popup_40f940ffe535da10827c1b448b7bf4b9)
+        ;
+
+        
+    
+    
+            marker_7ca290b45197a4bfd58d56e46948195e.bindTooltip(
+                `<div>
+                     Абеля, д. 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e099b8fbaff595c7ff063971d00d8cb1 = L.marker(
+                [53.065842, 158.599639],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_e3cdf235e431a7fec608cf44e23a700e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e099b8fbaff595c7ff063971d00d8cb1.setIcon(icon_e3cdf235e431a7fec608cf44e23a700e);
+        
+    
+        var popup_67a4a256e148ffe0f5c414fad6e389c6 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2cdc624c4a3a87b4b343398b16ba9f87 = $(`<div id="html_2cdc624c4a3a87b4b343398b16ba9f87" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_67a4a256e148ffe0f5c414fad6e389c6.setContent(html_2cdc624c4a3a87b4b343398b16ba9f87);
+            
+        
+
+        marker_e099b8fbaff595c7ff063971d00d8cb1.bindPopup(popup_67a4a256e148ffe0f5c414fad6e389c6)
+        ;
+
+        
+    
+    
+            marker_e099b8fbaff595c7ff063971d00d8cb1.bindTooltip(
+                `<div>
+                     Абеля, д. 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_880b6ce59c961c283403f1fb3dd9e742 = L.marker(
+                [53.067806, 158.602576],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_7682672366580ad160b9e49c73bdb714 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_880b6ce59c961c283403f1fb3dd9e742.setIcon(icon_7682672366580ad160b9e49c73bdb714);
+        
+    
+        var popup_26c2aace576abeee82f26241dc2d2067 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f054836754c1f713f61f837dc1884da0 = $(`<div id="html_f054836754c1f713f61f837dc1884da0" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_26c2aace576abeee82f26241dc2d2067.setContent(html_f054836754c1f713f61f837dc1884da0);
+            
+        
+
+        marker_880b6ce59c961c283403f1fb3dd9e742.bindPopup(popup_26c2aace576abeee82f26241dc2d2067)
+        ;
+
+        
+    
+    
+            marker_880b6ce59c961c283403f1fb3dd9e742.bindTooltip(
+                `<div>
+                     Абеля, д. 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ab8df11ab69ef28b771b5e5069052df = L.marker(
+                [53.066475, 158.602253],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_b97ae4ec01b097726155ce29fb5ad9a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2ab8df11ab69ef28b771b5e5069052df.setIcon(icon_b97ae4ec01b097726155ce29fb5ad9a3);
+        
+    
+        var popup_c19f5829fd78bb64453c76437be8e8cd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b3f5abb2934b620477a235ef1630c594 = $(`<div id="html_b3f5abb2934b620477a235ef1630c594" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_c19f5829fd78bb64453c76437be8e8cd.setContent(html_b3f5abb2934b620477a235ef1630c594);
+            
+        
+
+        marker_2ab8df11ab69ef28b771b5e5069052df.bindPopup(popup_c19f5829fd78bb64453c76437be8e8cd)
+        ;
+
+        
+    
+    
+            marker_2ab8df11ab69ef28b771b5e5069052df.bindTooltip(
+                `<div>
+                     Абеля, д. 17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef64f56c6fa8e534b062f5644e66b76f = L.marker(
+                [53.0672, 158.603268],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_79236a8a5b1a344d5bb7439c731dd912 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ef64f56c6fa8e534b062f5644e66b76f.setIcon(icon_79236a8a5b1a344d5bb7439c731dd912);
+        
+    
+        var popup_d54e25b0b9afc9aae74d8765307a29d5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b3e6645b43e6aeeb7570a4906a7dc2b2 = $(`<div id="html_b3e6645b43e6aeeb7570a4906a7dc2b2" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_d54e25b0b9afc9aae74d8765307a29d5.setContent(html_b3e6645b43e6aeeb7570a4906a7dc2b2);
+            
+        
+
+        marker_ef64f56c6fa8e534b062f5644e66b76f.bindPopup(popup_d54e25b0b9afc9aae74d8765307a29d5)
+        ;
+
+        
+    
+    
+            marker_ef64f56c6fa8e534b062f5644e66b76f.bindTooltip(
+                `<div>
+                     Абеля, д. 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a57e59a26141b92d84001a3186595b7 = L.marker(
+                [53.066226, 158.603043],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_0723bc7d2b2ebad07e0413d1b066e322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2a57e59a26141b92d84001a3186595b7.setIcon(icon_0723bc7d2b2ebad07e0413d1b066e322);
+        
+    
+        var popup_77e306e51713c7a06b2966e1d315a9d3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_96f806dd02a6a525c7585c58e972d73a = $(`<div id="html_96f806dd02a6a525c7585c58e972d73a" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_77e306e51713c7a06b2966e1d315a9d3.setContent(html_96f806dd02a6a525c7585c58e972d73a);
+            
+        
+
+        marker_2a57e59a26141b92d84001a3186595b7.bindPopup(popup_77e306e51713c7a06b2966e1d315a9d3)
+        ;
+
+        
+    
+    
+            marker_2a57e59a26141b92d84001a3186595b7.bindTooltip(
+                `<div>
+                     Абеля, д. 19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68c307388cf4310dd31482e79caa7c31 = L.marker(
+                [53.065863, 158.602989],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_ed4d3315e4700c83c12c7a42411c194c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_68c307388cf4310dd31482e79caa7c31.setIcon(icon_ed4d3315e4700c83c12c7a42411c194c);
+        
+    
+        var popup_fd8ca334eddf48af713a97213752a723 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_05ff5e99a19ff0dd7e274d2309005781 = $(`<div id="html_05ff5e99a19ff0dd7e274d2309005781" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_fd8ca334eddf48af713a97213752a723.setContent(html_05ff5e99a19ff0dd7e274d2309005781);
+            
+        
+
+        marker_68c307388cf4310dd31482e79caa7c31.bindPopup(popup_fd8ca334eddf48af713a97213752a723)
+        ;
+
+        
+    
+    
+            marker_68c307388cf4310dd31482e79caa7c31.bindTooltip(
+                `<div>
+                     Абеля, д. 21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cf38c1d93510426173d035c94033472 = L.marker(
+                [53.064733, 158.602944],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_30f096d1c73ecd7a416456fb3785199f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5cf38c1d93510426173d035c94033472.setIcon(icon_30f096d1c73ecd7a416456fb3785199f);
+        
+    
+        var popup_a8e01320db88179afcacc92324746add = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_90afa077649c596fcf536c7495567056 = $(`<div id="html_90afa077649c596fcf536c7495567056" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_a8e01320db88179afcacc92324746add.setContent(html_90afa077649c596fcf536c7495567056);
+            
+        
+
+        marker_5cf38c1d93510426173d035c94033472.bindPopup(popup_a8e01320db88179afcacc92324746add)
+        ;
+
+        
+    
+    
+            marker_5cf38c1d93510426173d035c94033472.bindTooltip(
+                `<div>
+                     Абеля, д. 31
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c29cdc0488fd1c7653bd9379c43e78ff = L.marker(
+                [53.063915, 158.603546],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_2f2217d6e8ee90972a1b40e3a0649c1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c29cdc0488fd1c7653bd9379c43e78ff.setIcon(icon_2f2217d6e8ee90972a1b40e3a0649c1e);
+        
+    
+        var popup_62311d133ceb6b0d455fdfbb1c82a9dc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e131e83c2ba7d1933f6a37a417c824c6 = $(`<div id="html_e131e83c2ba7d1933f6a37a417c824c6" style="width: 100.0%; height: 100.0%;">Видимые повреждения конструктивных элементов отсутствуют.  Работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_62311d133ceb6b0d455fdfbb1c82a9dc.setContent(html_e131e83c2ba7d1933f6a37a417c824c6);
+            
+        
+
+        marker_c29cdc0488fd1c7653bd9379c43e78ff.bindPopup(popup_62311d133ceb6b0d455fdfbb1c82a9dc)
+        ;
+
+        
+    
+    
+            marker_c29cdc0488fd1c7653bd9379c43e78ff.bindTooltip(
+                `<div>
+                     Абеля, д. 39
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5a82fabca3b326d466dfa991eab982f = L.marker(
+                [53.065036, 158.602073],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_1b4da463ef382cf6940a0be005d16d1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e5a82fabca3b326d466dfa991eab982f.setIcon(icon_1b4da463ef382cf6940a0be005d16d1d);
+        
+    
+        var popup_41a62ca45da9765813dea0f5e69c2a5e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_48a371b28d0e35cecdbb5782d7bff6f4 = $(`<div id="html_48a371b28d0e35cecdbb5782d7bff6f4" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_41a62ca45da9765813dea0f5e69c2a5e.setContent(html_48a371b28d0e35cecdbb5782d7bff6f4);
+            
+        
+
+        marker_e5a82fabca3b326d466dfa991eab982f.bindPopup(popup_41a62ca45da9765813dea0f5e69c2a5e)
+        ;
+
+        
+    
+    
+            marker_e5a82fabca3b326d466dfa991eab982f.bindTooltip(
+                `<div>
+                     Абеля, д. 29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2b0d14814042144b5d68677982543aa = L.marker(
+                [53.066042, 158.597626],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_94719eb37e2b48d8af4d5c14b04fd36a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e2b0d14814042144b5d68677982543aa.setIcon(icon_94719eb37e2b48d8af4d5c14b04fd36a);
+        
+    
+        var popup_8c4995e38d15ede9ddc3e1b73d251d05 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8a7f3a507c288e8bcd9b63b1a75f6990 = $(`<div id="html_8a7f3a507c288e8bcd9b63b1a75f6990" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_8c4995e38d15ede9ddc3e1b73d251d05.setContent(html_8a7f3a507c288e8bcd9b63b1a75f6990);
+            
+        
+
+        marker_e2b0d14814042144b5d68677982543aa.bindPopup(popup_8c4995e38d15ede9ddc3e1b73d251d05)
+        ;
+
+        
+    
+    
+            marker_e2b0d14814042144b5d68677982543aa.bindTooltip(
+                `<div>
+                     Абеля, д. 8/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ce1fd6a2b168ad8e4468b89a39ecbd4 = L.marker(
+                [53.066837, 158.60316],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_a13ffb4b41e3cba70fbe7f445c81063e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9ce1fd6a2b168ad8e4468b89a39ecbd4.setIcon(icon_a13ffb4b41e3cba70fbe7f445c81063e);
+        
+    
+        var popup_e89d5f6032310601672dd3b708b7ebc3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b301044109cc7b151829cb43cae43903 = $(`<div id="html_b301044109cc7b151829cb43cae43903" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_e89d5f6032310601672dd3b708b7ebc3.setContent(html_b301044109cc7b151829cb43cae43903);
+            
+        
+
+        marker_9ce1fd6a2b168ad8e4468b89a39ecbd4.bindPopup(popup_e89d5f6032310601672dd3b708b7ebc3)
+        ;
+
+        
+    
+    
+            marker_9ce1fd6a2b168ad8e4468b89a39ecbd4.bindTooltip(
+                `<div>
+                     Абеля, д. 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1af6c5ee57cbbe2ffc713c17815196c = L.marker(
+                [53.064154, 158.602567],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_2cb68958ceffb7274d5fbdedd131212a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e1af6c5ee57cbbe2ffc713c17815196c.setIcon(icon_2cb68958ceffb7274d5fbdedd131212a);
+        
+    
+        var popup_5d196e0ff7a723bd1d09f76b4a80fc2c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fe9d3b6d978767144132a412b2f03bb4 = $(`<div id="html_fe9d3b6d978767144132a412b2f03bb4" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_5d196e0ff7a723bd1d09f76b4a80fc2c.setContent(html_fe9d3b6d978767144132a412b2f03bb4);
+            
+        
+
+        marker_e1af6c5ee57cbbe2ffc713c17815196c.bindPopup(popup_5d196e0ff7a723bd1d09f76b4a80fc2c)
+        ;
+
+        
+    
+    
+            marker_e1af6c5ee57cbbe2ffc713c17815196c.bindTooltip(
+                `<div>
+                     Абеля, д. 37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_595fefef4db6048e201979d9041737bc = L.marker(
+                [53.068861, 158.609134],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_eb90ba91e1776d2a6f57d0b1865acbc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_595fefef4db6048e201979d9041737bc.setIcon(icon_eb90ba91e1776d2a6f57d0b1865acbc2);
+        
+    
+        var popup_11f40d2459c15012ad64d78856a3d82e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7ecc1defa6036ed4601ad63f62573c15 = $(`<div id="html_7ecc1defa6036ed4601ad63f62573c15" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_11f40d2459c15012ad64d78856a3d82e.setContent(html_7ecc1defa6036ed4601ad63f62573c15);
+            
+        
+
+        marker_595fefef4db6048e201979d9041737bc.bindPopup(popup_11f40d2459c15012ad64d78856a3d82e)
+        ;
+
+        
+    
+    
+            marker_595fefef4db6048e201979d9041737bc.bindTooltip(
+                `<div>
+                     бульвар Пийпа, д. 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c16dd6a932087cec094aee0e534d613 = L.marker(
+                [53.068093, 158.608954],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_1c541746cee4f5e62d068f86154b7c7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9c16dd6a932087cec094aee0e534d613.setIcon(icon_1c541746cee4f5e62d068f86154b7c7b);
+        
+    
+        var popup_b82384f5c1d6fe8fbd79f9b46291c884 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_cad6aa7dfac21729f2cd43ba495552d9 = $(`<div id="html_cad6aa7dfac21729f2cd43ba495552d9" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_b82384f5c1d6fe8fbd79f9b46291c884.setContent(html_cad6aa7dfac21729f2cd43ba495552d9);
+            
+        
+
+        marker_9c16dd6a932087cec094aee0e534d613.bindPopup(popup_b82384f5c1d6fe8fbd79f9b46291c884)
+        ;
+
+        
+    
+    
+            marker_9c16dd6a932087cec094aee0e534d613.bindTooltip(
+                `<div>
+                     бульвар Пийпа, д. 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92c123139f0a225c2f20ca2bd12c0495 = L.marker(
+                [53.06905, 158.607445],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_cd0a79d2cd461b2a7037e67756a711e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_92c123139f0a225c2f20ca2bd12c0495.setIcon(icon_cd0a79d2cd461b2a7037e67756a711e8);
+        
+    
+        var popup_e3a44b711121273e5ce295ca7ed14a15 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4374e8018d4d1d4ef670072d5e772a53 = $(`<div id="html_4374e8018d4d1d4ef670072d5e772a53" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_e3a44b711121273e5ce295ca7ed14a15.setContent(html_4374e8018d4d1d4ef670072d5e772a53);
+            
+        
+
+        marker_92c123139f0a225c2f20ca2bd12c0495.bindPopup(popup_e3a44b711121273e5ce295ca7ed14a15)
+        ;
+
+        
+    
+    
+            marker_92c123139f0a225c2f20ca2bd12c0495.bindTooltip(
+                `<div>
+                     бульвар Пийпа, д. 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08e5be525ccdc6ce3f658ea2e5171651 = L.marker(
+                [53.066329, 158.610751],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_08147c19642faf98fb61d8991536522d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_08e5be525ccdc6ce3f658ea2e5171651.setIcon(icon_08147c19642faf98fb61d8991536522d);
+        
+    
+        var popup_b589c79d709272ed3b3598f49f4af855 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_340a1758435787a70cbd5828380a2ede = $(`<div id="html_340a1758435787a70cbd5828380a2ede" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_b589c79d709272ed3b3598f49f4af855.setContent(html_340a1758435787a70cbd5828380a2ede);
+            
+        
+
+        marker_08e5be525ccdc6ce3f658ea2e5171651.bindPopup(popup_b589c79d709272ed3b3598f49f4af855)
+        ;
+
+        
+    
+    
+            marker_08e5be525ccdc6ce3f658ea2e5171651.bindTooltip(
+                `<div>
+                     Карагинская, д. 78
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3915384803451632ab562e1c7626290f = L.marker(
+                [53.065988, 158.594114],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_cb79ca93728d5b624836c683b0d24050 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3915384803451632ab562e1c7626290f.setIcon(icon_cb79ca93728d5b624836c683b0d24050);
+        
+    
+        var popup_2dc221dcc31d8abe5e7fa5ad066c6856 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fddfa660a92acc94cd670a2455472909 = $(`<div id="html_fddfa660a92acc94cd670a2455472909" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_2dc221dcc31d8abe5e7fa5ad066c6856.setContent(html_fddfa660a92acc94cd670a2455472909);
+            
+        
+
+        marker_3915384803451632ab562e1c7626290f.bindPopup(popup_2dc221dcc31d8abe5e7fa5ad066c6856)
+        ;
+
+        
+    
+    
+            marker_3915384803451632ab562e1c7626290f.bindTooltip(
+                `<div>
+                     Карбышева, д. 14/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64e6b8f88cdc55692678c5e11da4dfa0 = L.marker(
+                [53.065274, 158.596971],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_88f4450e8de4fe9e83ee9580df60a499 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_64e6b8f88cdc55692678c5e11da4dfa0.setIcon(icon_88f4450e8de4fe9e83ee9580df60a499);
+        
+    
+        var popup_af7d58e1292f4752272f6b700672882e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_589823529cdd256b695e71ed601d5d49 = $(`<div id="html_589823529cdd256b695e71ed601d5d49" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_af7d58e1292f4752272f6b700672882e.setContent(html_589823529cdd256b695e71ed601d5d49);
+            
+        
+
+        marker_64e6b8f88cdc55692678c5e11da4dfa0.bindPopup(popup_af7d58e1292f4752272f6b700672882e)
+        ;
+
+        
+    
+    
+            marker_64e6b8f88cdc55692678c5e11da4dfa0.bindTooltip(
+                `<div>
+                     Карбышева, д. 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43fc4a13ebf3841bce5654322ed71fdb = L.marker(
+                [53.064965, 158.59724],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_4fb4ddd4390ee6c660ef69122f75a6d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_43fc4a13ebf3841bce5654322ed71fdb.setIcon(icon_4fb4ddd4390ee6c660ef69122f75a6d4);
+        
+    
+        var popup_74cc45fd495c60aa292a19b39bcea20e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0c2f6f6c9d04fde0528d7e796a747cf7 = $(`<div id="html_0c2f6f6c9d04fde0528d7e796a747cf7" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_74cc45fd495c60aa292a19b39bcea20e.setContent(html_0c2f6f6c9d04fde0528d7e796a747cf7);
+            
+        
+
+        marker_43fc4a13ebf3841bce5654322ed71fdb.bindPopup(popup_74cc45fd495c60aa292a19b39bcea20e)
+        ;
+
+        
+    
+    
+            marker_43fc4a13ebf3841bce5654322ed71fdb.bindTooltip(
+                `<div>
+                     Карбышева, д. 4/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f23f645cd88c0eb61592cb8a4cff07a = L.marker(
+                [53.064689, 158.597321],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_69c00e4f2dd2fbe74fdaeb6f7151a591 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0f23f645cd88c0eb61592cb8a4cff07a.setIcon(icon_69c00e4f2dd2fbe74fdaeb6f7151a591);
+        
+    
+        var popup_f6b68dfdf44eb10bd13e199e5cb90399 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d772543263eedd092f07925b118b221f = $(`<div id="html_d772543263eedd092f07925b118b221f" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_f6b68dfdf44eb10bd13e199e5cb90399.setContent(html_d772543263eedd092f07925b118b221f);
+            
+        
+
+        marker_0f23f645cd88c0eb61592cb8a4cff07a.bindPopup(popup_f6b68dfdf44eb10bd13e199e5cb90399)
+        ;
+
+        
+    
+    
+            marker_0f23f645cd88c0eb61592cb8a4cff07a.bindTooltip(
+                `<div>
+                     Карбышева, д. 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d5651900cfd1d328561e084c69d55a2 = L.marker(
+                [53.0645, 158.5998],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_819f8795b5bcac9c5bd21f79901d59f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8d5651900cfd1d328561e084c69d55a2.setIcon(icon_819f8795b5bcac9c5bd21f79901d59f6);
+        
+    
+        var popup_2407996584424e98f0e0095ff85ecc5f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_247b70b4794eb1eca50d6a00d9305f70 = $(`<div id="html_247b70b4794eb1eca50d6a00d9305f70" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_2407996584424e98f0e0095ff85ecc5f.setContent(html_247b70b4794eb1eca50d6a00d9305f70);
+            
+        
+
+        marker_8d5651900cfd1d328561e084c69d55a2.bindPopup(popup_2407996584424e98f0e0095ff85ecc5f)
+        ;
+
+        
+    
+    
+            marker_8d5651900cfd1d328561e084c69d55a2.bindTooltip(
+                `<div>
+                     Карбышева, д. 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_732014d2ff707ccefeb9d21d63e98e76 = L.marker(
+                [53.064473, 158.607903],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_2af93400ee7d0ec6cabb5b3639c4b8ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_732014d2ff707ccefeb9d21d63e98e76.setIcon(icon_2af93400ee7d0ec6cabb5b3639c4b8ee);
+        
+    
+        var popup_d0809ff1cbbd1490eff7d7344a61a4b1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1cbb7ebb3101c491fab53ae3fd94b2b2 = $(`<div id="html_1cbb7ebb3101c491fab53ae3fd94b2b2" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 140.97 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_d0809ff1cbbd1490eff7d7344a61a4b1.setContent(html_1cbb7ebb3101c491fab53ae3fd94b2b2);
+            
+        
+
+        marker_732014d2ff707ccefeb9d21d63e98e76.bindPopup(popup_d0809ff1cbbd1490eff7d7344a61a4b1)
+        ;
+
+        
+    
+    
+            marker_732014d2ff707ccefeb9d21d63e98e76.bindTooltip(
+                `<div>
+                     Молчанова, д. 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f9761adec04d004583b8e221093fa23 = L.marker(
+                [53.064478, 158.607005],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_6eccb678863915f063d3f8e3472727d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f9761adec04d004583b8e221093fa23.setIcon(icon_6eccb678863915f063d3f8e3472727d0);
+        
+    
+        var popup_41b262904336005942e05c33a2d8b309 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_542100d407095636af1b8a16fc3058b1 = $(`<div id="html_542100d407095636af1b8a16fc3058b1" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 159.84 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_41b262904336005942e05c33a2d8b309.setContent(html_542100d407095636af1b8a16fc3058b1);
+            
+        
+
+        marker_7f9761adec04d004583b8e221093fa23.bindPopup(popup_41b262904336005942e05c33a2d8b309)
+        ;
+
+        
+    
+    
+            marker_7f9761adec04d004583b8e221093fa23.bindTooltip(
+                `<div>
+                     Молчанова, д. 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dee3a78fad5c850e04094455d9aa6e1 = L.marker(
+                [53.065539, 158.609637],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_6a043988c273af78416c097fa717a10a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4dee3a78fad5c850e04094455d9aa6e1.setIcon(icon_6a043988c273af78416c097fa717a10a);
+        
+    
+        var popup_6e95fa151cef20e4b4ae269696b6da98 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9ebe71ee1f78d1557369845ee5537387 = $(`<div id="html_9ebe71ee1f78d1557369845ee5537387" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_6e95fa151cef20e4b4ae269696b6da98.setContent(html_9ebe71ee1f78d1557369845ee5537387);
+            
+        
+
+        marker_4dee3a78fad5c850e04094455d9aa6e1.bindPopup(popup_6e95fa151cef20e4b4ae269696b6da98)
+        ;
+
+        
+    
+    
+            marker_4dee3a78fad5c850e04094455d9aa6e1.bindTooltip(
+                `<div>
+                     Молчанова, д. 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a56137719a4b4ac9fe5eb4939e936836 = L.marker(
+                [53.065609, 158.610284],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_cb7750c940e0a85f6ca7c655702f136e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a56137719a4b4ac9fe5eb4939e936836.setIcon(icon_cb7750c940e0a85f6ca7c655702f136e);
+        
+    
+        var popup_2fc1c7c4cc7ef7bd4650c33acfaca688 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f5a4e8db67c61724cb8f4da1ded0168e = $(`<div id="html_f5a4e8db67c61724cb8f4da1ded0168e" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_2fc1c7c4cc7ef7bd4650c33acfaca688.setContent(html_f5a4e8db67c61724cb8f4da1ded0168e);
+            
+        
+
+        marker_a56137719a4b4ac9fe5eb4939e936836.bindPopup(popup_2fc1c7c4cc7ef7bd4650c33acfaca688)
+        ;
+
+        
+    
+    
+            marker_a56137719a4b4ac9fe5eb4939e936836.bindTooltip(
+                `<div>
+                     Молчанова, д. 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92c599f63799180332657a3297a09d1d = L.marker(
+                [53.066399, 158.611388],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_5fc29cb92ea433e7330c551131092b32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_92c599f63799180332657a3297a09d1d.setIcon(icon_5fc29cb92ea433e7330c551131092b32);
+        
+    
+        var popup_55abdab728fa725fb27d2e40e03dc167 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_95a110c1f1f0ba151757d73021df8e77 = $(`<div id="html_95a110c1f1f0ba151757d73021df8e77" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_55abdab728fa725fb27d2e40e03dc167.setContent(html_95a110c1f1f0ba151757d73021df8e77);
+            
+        
+
+        marker_92c599f63799180332657a3297a09d1d.bindPopup(popup_55abdab728fa725fb27d2e40e03dc167)
+        ;
+
+        
+    
+    
+            marker_92c599f63799180332657a3297a09d1d.bindTooltip(
+                `<div>
+                     Молчанова, д. 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4230f1420805c50e1c567c866a2ff4c = L.marker(
+                [53.06753, 158.611029],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_91e4dc3df8234b2eadd31f9da0afc835 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f4230f1420805c50e1c567c866a2ff4c.setIcon(icon_91e4dc3df8234b2eadd31f9da0afc835);
+        
+    
+        var popup_e6154bc5f9b7f09c3198e68b70ff9c46 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_82e30e7bb1808f5569b4608f333b8879 = $(`<div id="html_82e30e7bb1808f5569b4608f333b8879" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9-10<br>Интенсивность: 6.5</div>`)[0];
+                popup_e6154bc5f9b7f09c3198e68b70ff9c46.setContent(html_82e30e7bb1808f5569b4608f333b8879);
+            
+        
+
+        marker_f4230f1420805c50e1c567c866a2ff4c.bindPopup(popup_e6154bc5f9b7f09c3198e68b70ff9c46)
+        ;
+
+        
+    
+    
+            marker_f4230f1420805c50e1c567c866a2ff4c.bindTooltip(
+                `<div>
+                     Молчанова, д. 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9ed17f397e1f102a824e563c89e8cf3 = L.marker(
+                [53.067157, 158.612907],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_8ed3b39134de283b065801c7f0f7d034 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e9ed17f397e1f102a824e563c89e8cf3.setIcon(icon_8ed3b39134de283b065801c7f0f7d034);
+        
+    
+        var popup_07517055a833db9db5e0457cbb1598a5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b3a5e17650ecab14a2dad722efe824d0 = $(`<div id="html_b3a5e17650ecab14a2dad722efe824d0" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 140.16 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_07517055a833db9db5e0457cbb1598a5.setContent(html_b3a5e17650ecab14a2dad722efe824d0);
+            
+        
+
+        marker_e9ed17f397e1f102a824e563c89e8cf3.bindPopup(popup_07517055a833db9db5e0457cbb1598a5)
+        ;
+
+        
+    
+    
+            marker_e9ed17f397e1f102a824e563c89e8cf3.bindTooltip(
+                `<div>
+                     Молчанова, д. 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b237b1f92fe3b9e21597ae008d9856b = L.marker(
+                [53.067979, 158.614065],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_981a7b6b5ec4892b5dd3befb01d36513 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b237b1f92fe3b9e21597ae008d9856b.setIcon(icon_981a7b6b5ec4892b5dd3befb01d36513);
+        
+    
+        var popup_7eac63dbf7fa422b21c010d684104f70 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c2dda8f05b1d581e578c7957d7ab021a = $(`<div id="html_c2dda8f05b1d581e578c7957d7ab021a" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 228.07 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_7eac63dbf7fa422b21c010d684104f70.setContent(html_c2dda8f05b1d581e578c7957d7ab021a);
+            
+        
+
+        marker_9b237b1f92fe3b9e21597ae008d9856b.bindPopup(popup_7eac63dbf7fa422b21c010d684104f70)
+        ;
+
+        
+    
+    
+            marker_9b237b1f92fe3b9e21597ae008d9856b.bindTooltip(
+                `<div>
+                     Молчанова, д. 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d655fc43deda34933123e068866e1e6d = L.marker(
+                [53.070289, 158.599396],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_744973c5521d2de043fc12f6f3c04a60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d655fc43deda34933123e068866e1e6d.setIcon(icon_744973c5521d2de043fc12f6f3c04a60);
+        
+    
+        var popup_2fe5f8b3f5157a5b50d5367c78704b09 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_018ce6cde040a952795fec1ae62f1c24 = $(`<div id="html_018ce6cde040a952795fec1ae62f1c24" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 220.86 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_2fe5f8b3f5157a5b50d5367c78704b09.setContent(html_018ce6cde040a952795fec1ae62f1c24);
+            
+        
+
+        marker_d655fc43deda34933123e068866e1e6d.bindPopup(popup_2fe5f8b3f5157a5b50d5367c78704b09)
+        ;
+
+        
+    
+    
+            marker_d655fc43deda34933123e068866e1e6d.bindTooltip(
+                `<div>
+                     проспект Победы, д. 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7017c69e29ecf929e85597c81581f15 = L.marker(
+                [53.069445, 158.601453],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_064a772059a7337c9b1d52180c067d30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7017c69e29ecf929e85597c81581f15.setIcon(icon_064a772059a7337c9b1d52180c067d30);
+        
+    
+        var popup_ec39a01af97adb3a9ea8d482ad3d1d6e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3792bd06917e47cb359530783fdd3187 = $(`<div id="html_3792bd06917e47cb359530783fdd3187" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 219.73 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_ec39a01af97adb3a9ea8d482ad3d1d6e.setContent(html_3792bd06917e47cb359530783fdd3187);
+            
+        
+
+        marker_b7017c69e29ecf929e85597c81581f15.bindPopup(popup_ec39a01af97adb3a9ea8d482ad3d1d6e)
+        ;
+
+        
+    
+    
+            marker_b7017c69e29ecf929e85597c81581f15.bindTooltip(
+                `<div>
+                     проспект Победы, д. 29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a6379c44f2416d4fd2fd2c0a172b0d5 = L.marker(
+                [53.069586, 158.600609],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_f4e2dbbfdc66c97427f2198565fdb3bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a6379c44f2416d4fd2fd2c0a172b0d5.setIcon(icon_f4e2dbbfdc66c97427f2198565fdb3bd);
+        
+    
+        var popup_96216a36e3256049cc43c1caa229481f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3fea16eee946d9b5f543c28dadce51fc = $(`<div id="html_3fea16eee946d9b5f543c28dadce51fc" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 132.24 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_96216a36e3256049cc43c1caa229481f.setContent(html_3fea16eee946d9b5f543c28dadce51fc);
+            
+        
+
+        marker_0a6379c44f2416d4fd2fd2c0a172b0d5.bindPopup(popup_96216a36e3256049cc43c1caa229481f)
+        ;
+
+        
+    
+    
+            marker_0a6379c44f2416d4fd2fd2c0a172b0d5.bindTooltip(
+                `<div>
+                     проспект Победы, д. 31
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d34975858beeaa7482e7f500036f0c1 = L.marker(
+                [53.069873, 158.598758],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_299c3f5c1abdb5fb5de38f1b410acc86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d34975858beeaa7482e7f500036f0c1.setIcon(icon_299c3f5c1abdb5fb5de38f1b410acc86);
+        
+    
+        var popup_3c79ae3be7ca95d22d5b613a02cec4a5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9c5ac84f91f528cb92354a08984fc1fd = $(`<div id="html_9c5ac84f91f528cb92354a08984fc1fd" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 136.61 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_3c79ae3be7ca95d22d5b613a02cec4a5.setContent(html_9c5ac84f91f528cb92354a08984fc1fd);
+            
+        
+
+        marker_6d34975858beeaa7482e7f500036f0c1.bindPopup(popup_3c79ae3be7ca95d22d5b613a02cec4a5)
+        ;
+
+        
+    
+    
+            marker_6d34975858beeaa7482e7f500036f0c1.bindTooltip(
+                `<div>
+                     проспект Победы, д. 37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ab2157fa21bd93f463c588b3de75553 = L.marker(
+                [53.06924, 158.598605],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_29b809313673d3076666910be4f0d33e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5ab2157fa21bd93f463c588b3de75553.setIcon(icon_29b809313673d3076666910be4f0d33e);
+        
+    
+        var popup_436c3bcf0536bda88667c89e0ede0489 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c664728d551a2ae9c8be0671a40e727e = $(`<div id="html_c664728d551a2ae9c8be0671a40e727e" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 113.72 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_436c3bcf0536bda88667c89e0ede0489.setContent(html_c664728d551a2ae9c8be0671a40e727e);
+            
+        
+
+        marker_5ab2157fa21bd93f463c588b3de75553.bindPopup(popup_436c3bcf0536bda88667c89e0ede0489)
+        ;
+
+        
+    
+    
+            marker_5ab2157fa21bd93f463c588b3de75553.bindTooltip(
+                `<div>
+                     проспект Победы, д. 39
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03a5869ab7cd9d09edf67d96a8cc146d = L.marker(
+                [53.069153, 158.597348],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_e22cfb914a1d4eebfcff5786ab85ac63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_03a5869ab7cd9d09edf67d96a8cc146d.setIcon(icon_e22cfb914a1d4eebfcff5786ab85ac63);
+        
+    
+        var popup_8012db02f700f83d1caf2dd6fdaf2a98 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1c25a81d9416eccf305feaddc607ab6f = $(`<div id="html_1c25a81d9416eccf305feaddc607ab6f" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_8012db02f700f83d1caf2dd6fdaf2a98.setContent(html_1c25a81d9416eccf305feaddc607ab6f);
+            
+        
+
+        marker_03a5869ab7cd9d09edf67d96a8cc146d.bindPopup(popup_8012db02f700f83d1caf2dd6fdaf2a98)
+        ;
+
+        
+    
+    
+            marker_03a5869ab7cd9d09edf67d96a8cc146d.bindTooltip(
+                `<div>
+                     проспект Победы, д. 45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c435b31927650642f5f3986d11ca3a71 = L.marker(
+                [53.069916, 158.597986],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_28eacad9380d0d4075e21bfe88b758bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c435b31927650642f5f3986d11ca3a71.setIcon(icon_28eacad9380d0d4075e21bfe88b758bd);
+        
+    
+        var popup_9a72282ffcb3de28c12052ca6f11218e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d88a0d4b1a2f01f179d5d56eb5841f06 = $(`<div id="html_d88a0d4b1a2f01f179d5d56eb5841f06" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 175.66 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_9a72282ffcb3de28c12052ca6f11218e.setContent(html_d88a0d4b1a2f01f179d5d56eb5841f06);
+            
+        
+
+        marker_c435b31927650642f5f3986d11ca3a71.bindPopup(popup_9a72282ffcb3de28c12052ca6f11218e)
+        ;
+
+        
+    
+    
+            marker_c435b31927650642f5f3986d11ca3a71.bindTooltip(
+                `<div>
+                     проспект Победы, д. 41/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_695596f3b9a153835ec4369f280bdb53 = L.marker(
+                [53.070246, 158.593808],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_f3f79998a6721820a5d0e066c51837da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_695596f3b9a153835ec4369f280bdb53.setIcon(icon_f3f79998a6721820a5d0e066c51837da);
+        
+    
+        var popup_99a944b7baf14a4e4b6f63b627109c79 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4b0e1cea8ea96cbaddd4429cf42a2707 = $(`<div id="html_4b0e1cea8ea96cbaddd4429cf42a2707" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_99a944b7baf14a4e4b6f63b627109c79.setContent(html_4b0e1cea8ea96cbaddd4429cf42a2707);
+            
+        
+
+        marker_695596f3b9a153835ec4369f280bdb53.bindPopup(popup_99a944b7baf14a4e4b6f63b627109c79)
+        ;
+
+        
+    
+    
+            marker_695596f3b9a153835ec4369f280bdb53.bindTooltip(
+                `<div>
+                     проспект Победы, д. 55
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c737e0c6c0b86a9c62b8f22c9cd07c9 = L.marker(
+                [53.069878, 158.593719],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_af34efa9c74582cbdae26863ee1fbebe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5c737e0c6c0b86a9c62b8f22c9cd07c9.setIcon(icon_af34efa9c74582cbdae26863ee1fbebe);
+        
+    
+        var popup_c6677b33c3bc0d6d9974f328ed3d16fa = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9b40f8347c0a1303caa2f5557ea81cc3 = $(`<div id="html_9b40f8347c0a1303caa2f5557ea81cc3" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_c6677b33c3bc0d6d9974f328ed3d16fa.setContent(html_9b40f8347c0a1303caa2f5557ea81cc3);
+            
+        
+
+        marker_5c737e0c6c0b86a9c62b8f22c9cd07c9.bindPopup(popup_c6677b33c3bc0d6d9974f328ed3d16fa)
+        ;
+
+        
+    
+    
+            marker_5c737e0c6c0b86a9c62b8f22c9cd07c9.bindTooltip(
+                `<div>
+                     проспект Победы, д. 57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fedf26ee21d9d9c4bd80a16fbe6c7e7 = L.marker(
+                [53.069608, 158.606699],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_dcf716abb2449ed52180e136192064a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4fedf26ee21d9d9c4bd80a16fbe6c7e7.setIcon(icon_dcf716abb2449ed52180e136192064a7);
+        
+    
+        var popup_3536a2f98f15a0affbdcd87106b4d91f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_70cd2e40033400d4520b1ee29ff02e17 = $(`<div id="html_70cd2e40033400d4520b1ee29ff02e17" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_3536a2f98f15a0affbdcd87106b4d91f.setContent(html_70cd2e40033400d4520b1ee29ff02e17);
+            
+        
+
+        marker_4fedf26ee21d9d9c4bd80a16fbe6c7e7.bindPopup(popup_3536a2f98f15a0affbdcd87106b4d91f)
+        ;
+
+        
+    
+    
+            marker_4fedf26ee21d9d9c4bd80a16fbe6c7e7.bindTooltip(
+                `<div>
+                     проспект Победы, д. 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffbf76ff661353428e04056235495f17 = L.marker(
+                [53.068726, 158.612637],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_d4bb0901bc86c07f7fc7b7ba28ebfc53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ffbf76ff661353428e04056235495f17.setIcon(icon_d4bb0901bc86c07f7fc7b7ba28ebfc53);
+        
+    
+        var popup_a3ac8ee4f50f614dd1fde5cfcf28a749 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_836dff3be789556daa7537773239ca0c = $(`<div id="html_836dff3be789556daa7537773239ca0c" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 133.46 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_a3ac8ee4f50f614dd1fde5cfcf28a749.setContent(html_836dff3be789556daa7537773239ca0c);
+            
+        
+
+        marker_ffbf76ff661353428e04056235495f17.bindPopup(popup_a3ac8ee4f50f614dd1fde5cfcf28a749)
+        ;
+
+        
+    
+    
+            marker_ffbf76ff661353428e04056235495f17.bindTooltip(
+                `<div>
+                     проспект Победы, д. 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2fcf8653d1da44dc83bd6eb1717f063 = L.marker(
+                [53.06878, 158.612008],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_5133b5314bb0ed0ab30c59c20cf4eb7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2fcf8653d1da44dc83bd6eb1717f063.setIcon(icon_5133b5314bb0ed0ab30c59c20cf4eb7a);
+        
+    
+        var popup_85d6e9971c29312dde9cf0afaee57259 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fca3bc5718448ee1de922d0ec8c34a2a = $(`<div id="html_fca3bc5718448ee1de922d0ec8c34a2a" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 135.65 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_85d6e9971c29312dde9cf0afaee57259.setContent(html_fca3bc5718448ee1de922d0ec8c34a2a);
+            
+        
+
+        marker_d2fcf8653d1da44dc83bd6eb1717f063.bindPopup(popup_85d6e9971c29312dde9cf0afaee57259)
+        ;
+
+        
+    
+    
+            marker_d2fcf8653d1da44dc83bd6eb1717f063.bindTooltip(
+                `<div>
+                     проспект Победы, д. 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c2c2849e21f777f5af74d56f6d91100 = L.marker(
+                [53.068839, 158.611415],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_9a57a272ffb769bfa20aa34236b3de8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c2c2849e21f777f5af74d56f6d91100.setIcon(icon_9a57a272ffb769bfa20aa34236b3de8b);
+        
+    
+        var popup_5243148b2c8432a45f5d48626c1cb548 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_78f27c1a5c8d7e01a705c893aa37ec55 = $(`<div id="html_78f27c1a5c8d7e01a705c893aa37ec55" style="width: 100.0%; height: 100.0%;">Аварийное состояние по ГОСТ 31937<br>Ущерб составил 137.38 млн.руб.<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 10<br>Интенсивность: 7.0</div>`)[0];
+                popup_5243148b2c8432a45f5d48626c1cb548.setContent(html_78f27c1a5c8d7e01a705c893aa37ec55);
+            
+        
+
+        marker_8c2c2849e21f777f5af74d56f6d91100.bindPopup(popup_5243148b2c8432a45f5d48626c1cb548)
+        ;
+
+        
+    
+    
+            marker_8c2c2849e21f777f5af74d56f6d91100.bindTooltip(
+                `<div>
+                     проспект Победы, д. 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65dcfea2a20dc70221af889b00a9d585 = L.marker(
+                [53.070711, 158.617416],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_f01dd765b3fb3191c01d69a7ca010dda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_65dcfea2a20dc70221af889b00a9d585.setIcon(icon_f01dd765b3fb3191c01d69a7ca010dda);
+        
+    
+        var popup_f81993b9599ae725db661bfa6bb41044 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_52ceac43b2d4a10c2aff89786acec09d = $(`<div id="html_52ceac43b2d4a10c2aff89786acec09d" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_f81993b9599ae725db661bfa6bb41044.setContent(html_52ceac43b2d4a10c2aff89786acec09d);
+            
+        
+
+        marker_65dcfea2a20dc70221af889b00a9d585.bindPopup(popup_f81993b9599ae725db661bfa6bb41044)
+        ;
+
+        
+    
+    
+            marker_65dcfea2a20dc70221af889b00a9d585.bindTooltip(
+                `<div>
+                     Кавказская, д. 38
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ad515a7efeb9b5d7f43041a6bf8b0af = L.marker(
+                [53.070165, 158.611505],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_10d7642ecb18ac01e80f7aa1df48b129 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9ad515a7efeb9b5d7f43041a6bf8b0af.setIcon(icon_10d7642ecb18ac01e80f7aa1df48b129);
+        
+    
+        var popup_eb787506c618f815978453a6662c169c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_707d1a0bb59fabc01ba1bf2685333c4a = $(`<div id="html_707d1a0bb59fabc01ba1bf2685333c4a" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9-10<br>Интенсивность: 6.5</div>`)[0];
+                popup_eb787506c618f815978453a6662c169c.setContent(html_707d1a0bb59fabc01ba1bf2685333c4a);
+            
+        
+
+        marker_9ad515a7efeb9b5d7f43041a6bf8b0af.bindPopup(popup_eb787506c618f815978453a6662c169c)
+        ;
+
+        
+    
+    
+            marker_9ad515a7efeb9b5d7f43041a6bf8b0af.bindTooltip(
+                `<div>
+                     проспект Победы, д. 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba60d79780ae9f55839baa7cc2351d70 = L.marker(
+                [53.070668, 158.609538],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_128b57ede147f185dc169ad65ca72aa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ba60d79780ae9f55839baa7cc2351d70.setIcon(icon_128b57ede147f185dc169ad65ca72aa0);
+        
+    
+        var popup_c13fcb09d7b748324f074fcbaf190f31 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e9920fc3102b3216d805fe3e5998803c = $(`<div id="html_e9920fc3102b3216d805fe3e5998803c" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_c13fcb09d7b748324f074fcbaf190f31.setContent(html_e9920fc3102b3216d805fe3e5998803c);
+            
+        
+
+        marker_ba60d79780ae9f55839baa7cc2351d70.bindPopup(popup_c13fcb09d7b748324f074fcbaf190f31)
+        ;
+
+        
+    
+    
+            marker_ba60d79780ae9f55839baa7cc2351d70.bindTooltip(
+                `<div>
+                     проспект Победы, д. 4/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1282d18ac4bd310e38226aa4ecf59e7b = L.marker(
+                [53.072124, 158.607786],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_b288c5df254955f4ddd69874505bdfc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1282d18ac4bd310e38226aa4ecf59e7b.setIcon(icon_b288c5df254955f4ddd69874505bdfc7);
+        
+    
+        var popup_b33c5825c61009cc011fe50d7325aa37 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d7be1108afa659ed6d704f5896aab5ff = $(`<div id="html_d7be1108afa659ed6d704f5896aab5ff" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_b33c5825c61009cc011fe50d7325aa37.setContent(html_d7be1108afa659ed6d704f5896aab5ff);
+            
+        
+
+        marker_1282d18ac4bd310e38226aa4ecf59e7b.bindPopup(popup_b33c5825c61009cc011fe50d7325aa37)
+        ;
+
+        
+    
+    
+            marker_1282d18ac4bd310e38226aa4ecf59e7b.bindTooltip(
+                `<div>
+                     проспект Победы, д. 6/2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5a88ebd8ef0112d51673000dd06b04e = L.marker(
+                [53.072178, 158.607175],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_2aa6d0bc441e1e9cc7487c4e95b736d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a5a88ebd8ef0112d51673000dd06b04e.setIcon(icon_2aa6d0bc441e1e9cc7487c4e95b736d8);
+        
+    
+        var popup_1fa7c88d38d5513c76784dfeb3c9c57d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_5d3f845ea6dc9a7d986e02bb4b15df75 = $(`<div id="html_5d3f845ea6dc9a7d986e02bb4b15df75" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_1fa7c88d38d5513c76784dfeb3c9c57d.setContent(html_5d3f845ea6dc9a7d986e02bb4b15df75);
+            
+        
+
+        marker_a5a88ebd8ef0112d51673000dd06b04e.bindPopup(popup_1fa7c88d38d5513c76784dfeb3c9c57d)
+        ;
+
+        
+    
+    
+            marker_a5a88ebd8ef0112d51673000dd06b04e.bindTooltip(
+                `<div>
+                     проспект Победы, д. 6/3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0523a730bffbffaff5fe99d3d37e1a16 = L.marker(
+                [53.070484, 158.606978],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_315294429f93641b1cbc08b7f3048e59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0523a730bffbffaff5fe99d3d37e1a16.setIcon(icon_315294429f93641b1cbc08b7f3048e59);
+        
+    
+        var popup_60c8d6b157b86e7a5807e5ba1bbc27be = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ca039226e65d09a21ac194fa4fa233d7 = $(`<div id="html_ca039226e65d09a21ac194fa4fa233d7" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_60c8d6b157b86e7a5807e5ba1bbc27be.setContent(html_ca039226e65d09a21ac194fa4fa233d7);
+            
+        
+
+        marker_0523a730bffbffaff5fe99d3d37e1a16.bindPopup(popup_60c8d6b157b86e7a5807e5ba1bbc27be)
+        ;
+
+        
+    
+    
+            marker_0523a730bffbffaff5fe99d3d37e1a16.bindTooltip(
+                `<div>
+                     проспект Победы, д. 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f46cf711f36b5cfaae795c44645b55f6 = L.marker(
+                [53.070814, 158.60731],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_15454f38889c3b670f8792bd7dbe1ec5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f46cf711f36b5cfaae795c44645b55f6.setIcon(icon_15454f38889c3b670f8792bd7dbe1ec5);
+        
+    
+        var popup_3fe866f9df6c35af959d4c17b5bd9513 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c5cecfe0e607e67023bc502213747ee4 = $(`<div id="html_c5cecfe0e607e67023bc502213747ee4" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_3fe866f9df6c35af959d4c17b5bd9513.setContent(html_c5cecfe0e607e67023bc502213747ee4);
+            
+        
+
+        marker_f46cf711f36b5cfaae795c44645b55f6.bindPopup(popup_3fe866f9df6c35af959d4c17b5bd9513)
+        ;
+
+        
+    
+    
+            marker_f46cf711f36b5cfaae795c44645b55f6.bindTooltip(
+                `<div>
+                     проспект Победы, д. 8/2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_241d378d9851f2dee54c50283cb046e0 = L.marker(
+                [53.070636, 158.60501],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_2193791a919ced388c33992a77047e34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_241d378d9851f2dee54c50283cb046e0.setIcon(icon_2193791a919ced388c33992a77047e34);
+        
+    
+        var popup_b41652871562c040a573a5ab87928738 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_781c84cc3c82c9940a540a7ab0cf7b98 = $(`<div id="html_781c84cc3c82c9940a540a7ab0cf7b98" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_b41652871562c040a573a5ab87928738.setContent(html_781c84cc3c82c9940a540a7ab0cf7b98);
+            
+        
+
+        marker_241d378d9851f2dee54c50283cb046e0.bindPopup(popup_b41652871562c040a573a5ab87928738)
+        ;
+
+        
+    
+    
+            marker_241d378d9851f2dee54c50283cb046e0.bindTooltip(
+                `<div>
+                     проспект Победы, д. 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23ebc5bd7ef6b1347bc065db76e0359c = L.marker(
+                [53.070944, 158.605199],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_59e01a488980648fa3e849e2a1171a56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_23ebc5bd7ef6b1347bc065db76e0359c.setIcon(icon_59e01a488980648fa3e849e2a1171a56);
+        
+    
+        var popup_21effb444ac23668e012d18e32c3119d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_587e0aa243315aad54a9dba4b697c66e = $(`<div id="html_587e0aa243315aad54a9dba4b697c66e" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_21effb444ac23668e012d18e32c3119d.setContent(html_587e0aa243315aad54a9dba4b697c66e);
+            
+        
+
+        marker_23ebc5bd7ef6b1347bc065db76e0359c.bindPopup(popup_21effb444ac23668e012d18e32c3119d)
+        ;
+
+        
+    
+    
+            marker_23ebc5bd7ef6b1347bc065db76e0359c.bindTooltip(
+                `<div>
+                     проспект Победы, д. 10/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bdaca38b1469882d37c28f362097625 = L.marker(
+                [53.071501, 158.612709],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_a7fa96da37f21230a792cd73c97f41cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5bdaca38b1469882d37c28f362097625.setIcon(icon_a7fa96da37f21230a792cd73c97f41cf);
+        
+    
+        var popup_dd1de149ff4f002217b3ea9320267503 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_56560394a5cd801f9f9b363f659e5ea5 = $(`<div id="html_56560394a5cd801f9f9b363f659e5ea5" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_dd1de149ff4f002217b3ea9320267503.setContent(html_56560394a5cd801f9f9b363f659e5ea5);
+            
+        
+
+        marker_5bdaca38b1469882d37c28f362097625.bindPopup(popup_dd1de149ff4f002217b3ea9320267503)
+        ;
+
+        
+    
+    
+            marker_5bdaca38b1469882d37c28f362097625.bindTooltip(
+                `<div>
+                     Чубарова, д. 1/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6be03fe004cda016544ee18122cf0047 = L.marker(
+                [53.071956, 158.612781],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_42eb45478219b47728b59e3b6dcba447 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6be03fe004cda016544ee18122cf0047.setIcon(icon_42eb45478219b47728b59e3b6dcba447);
+        
+    
+        var popup_3ecb74c6b6e5e97e8cf50edcc52e4d86 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_484bfd477dd667abb2152157d7de861a = $(`<div id="html_484bfd477dd667abb2152157d7de861a" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_3ecb74c6b6e5e97e8cf50edcc52e4d86.setContent(html_484bfd477dd667abb2152157d7de861a);
+            
+        
+
+        marker_6be03fe004cda016544ee18122cf0047.bindPopup(popup_3ecb74c6b6e5e97e8cf50edcc52e4d86)
+        ;
+
+        
+    
+    
+            marker_6be03fe004cda016544ee18122cf0047.bindTooltip(
+                `<div>
+                     Чубарова, д. 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e1ea0b714c40e7da4cd4b672cb8df66 = L.marker(
+                [53.071875, 158.611559],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_2edce0148ac7565ec10dc6c2a9462fb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1e1ea0b714c40e7da4cd4b672cb8df66.setIcon(icon_2edce0148ac7565ec10dc6c2a9462fb7);
+        
+    
+        var popup_e4be3ea116302bb17a3b988645f9d141 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_5da2a9722f5941b6309ad1203d5baf7f = $(`<div id="html_5da2a9722f5941b6309ad1203d5baf7f" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_e4be3ea116302bb17a3b988645f9d141.setContent(html_5da2a9722f5941b6309ad1203d5baf7f);
+            
+        
+
+        marker_1e1ea0b714c40e7da4cd4b672cb8df66.bindPopup(popup_e4be3ea116302bb17a3b988645f9d141)
+        ;
+
+        
+    
+    
+            marker_1e1ea0b714c40e7da4cd4b672cb8df66.bindTooltip(
+                `<div>
+                     Чубарова, д. 3/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35aca09c5c44e271b36062d299b12f90 = L.marker(
+                [53.07017, 158.614281],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_5de208255f01016cc2932111bd8f08ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_35aca09c5c44e271b36062d299b12f90.setIcon(icon_5de208255f01016cc2932111bd8f08ae);
+        
+    
+        var popup_055d9b8fceef49930e4b9814e7bed74a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_06744a041e19d5ad424e4cfd939cc96a = $(`<div id="html_06744a041e19d5ad424e4cfd939cc96a" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_055d9b8fceef49930e4b9814e7bed74a.setContent(html_06744a041e19d5ad424e4cfd939cc96a);
+            
+        
+
+        marker_35aca09c5c44e271b36062d299b12f90.bindPopup(popup_055d9b8fceef49930e4b9814e7bed74a)
+        ;
+
+        
+    
+    
+            marker_35aca09c5c44e271b36062d299b12f90.bindTooltip(
+                `<div>
+                     Чубарова, д. 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e794bb636d427e73e0193fc9f0f7c32 = L.marker(
+                [53.070176, 158.616015],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_113424704221858ac341f8e90c3e3245 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8e794bb636d427e73e0193fc9f0f7c32.setIcon(icon_113424704221858ac341f8e90c3e3245);
+        
+    
+        var popup_015aea86548daeef93895ac7db120766 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_edcfe5b42bab588e6ccad43cd64a3806 = $(`<div id="html_edcfe5b42bab588e6ccad43cd64a3806" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_015aea86548daeef93895ac7db120766.setContent(html_edcfe5b42bab588e6ccad43cd64a3806);
+            
+        
+
+        marker_8e794bb636d427e73e0193fc9f0f7c32.bindPopup(popup_015aea86548daeef93895ac7db120766)
+        ;
+
+        
+    
+    
+            marker_8e794bb636d427e73e0193fc9f0f7c32.bindTooltip(
+                `<div>
+                     Чубарова, д. 4/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ea67090abd17ab8acee4100dcce1e37 = L.marker(
+                [53.072318, 158.613041],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_17d7938f30577160fc03c0f8c4f936e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8ea67090abd17ab8acee4100dcce1e37.setIcon(icon_17d7938f30577160fc03c0f8c4f936e9);
+        
+    
+        var popup_b2213910c86fda06d7e1971cf3c7e000 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_10088be10ef1654eeddc26f92177a85f = $(`<div id="html_10088be10ef1654eeddc26f92177a85f" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_b2213910c86fda06d7e1971cf3c7e000.setContent(html_10088be10ef1654eeddc26f92177a85f);
+            
+        
+
+        marker_8ea67090abd17ab8acee4100dcce1e37.bindPopup(popup_b2213910c86fda06d7e1971cf3c7e000)
+        ;
+
+        
+    
+    
+            marker_8ea67090abd17ab8acee4100dcce1e37.bindTooltip(
+                `<div>
+                     Чубарова, д. 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_467e192614c9c3e95e399a236477b4fa = L.marker(
+                [53.072513, 158.610849],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_79f8365b39c016f1e33a8a67c5c96dea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_467e192614c9c3e95e399a236477b4fa.setIcon(icon_79f8365b39c016f1e33a8a67c5c96dea);
+        
+    
+        var popup_09443501444b7124c43a2dc5c3cfc6e2 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_83af5ffb2a78e6bf807b11f50502cd5c = $(`<div id="html_83af5ffb2a78e6bf807b11f50502cd5c" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_09443501444b7124c43a2dc5c3cfc6e2.setContent(html_83af5ffb2a78e6bf807b11f50502cd5c);
+            
+        
+
+        marker_467e192614c9c3e95e399a236477b4fa.bindPopup(popup_09443501444b7124c43a2dc5c3cfc6e2)
+        ;
+
+        
+    
+    
+            marker_467e192614c9c3e95e399a236477b4fa.bindTooltip(
+                `<div>
+                     Чубарова, д. 5/1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a80da8141bb54063901ce723e0563f9 = L.marker(
+                [53.070647, 158.614515],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_0310daf5508becd5523e5268ad5b9874 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6a80da8141bb54063901ce723e0563f9.setIcon(icon_0310daf5508becd5523e5268ad5b9874);
+        
+    
+        var popup_599a43fcf22c8697b72ebc95cf10b400 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fed11e6bac0e96af5237c3838c80c309 = $(`<div id="html_fed11e6bac0e96af5237c3838c80c309" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_599a43fcf22c8697b72ebc95cf10b400.setContent(html_fed11e6bac0e96af5237c3838c80c309);
+            
+        
+
+        marker_6a80da8141bb54063901ce723e0563f9.bindPopup(popup_599a43fcf22c8697b72ebc95cf10b400)
+        ;
+
+        
+    
+    
+            marker_6a80da8141bb54063901ce723e0563f9.bindTooltip(
+                `<div>
+                     Чубарова, д. 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efe044e01153ee3498ad3942f79f5121 = L.marker(
+                [53.071014, 158.614712],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_2d90a2ce472c8cdf79fe40f7b7b1cf37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_efe044e01153ee3498ad3942f79f5121.setIcon(icon_2d90a2ce472c8cdf79fe40f7b7b1cf37);
+        
+    
+        var popup_76c4e25655666bfa4fe51b26efba56f2 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b22f14034437d340bf5b5075fb53ff9b = $(`<div id="html_b22f14034437d340bf5b5075fb53ff9b" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_76c4e25655666bfa4fe51b26efba56f2.setContent(html_b22f14034437d340bf5b5075fb53ff9b);
+            
+        
+
+        marker_efe044e01153ee3498ad3942f79f5121.bindPopup(popup_76c4e25655666bfa4fe51b26efba56f2)
+        ;
+
+        
+    
+    
+            marker_efe044e01153ee3498ad3942f79f5121.bindTooltip(
+                `<div>
+                     Чубарова, д. 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_716866f02f3cc33dbe98903aa8c0877d = L.marker(
+                [53.071372, 158.614847],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_880ad12679a4b55d19f20342c3ecedbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_716866f02f3cc33dbe98903aa8c0877d.setIcon(icon_880ad12679a4b55d19f20342c3ecedbb);
+        
+    
+        var popup_99bde3efb85fdec977c2999484236a4c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_5fb7a65c892b51a105240b9b5c123743 = $(`<div id="html_5fb7a65c892b51a105240b9b5c123743" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_99bde3efb85fdec977c2999484236a4c.setContent(html_5fb7a65c892b51a105240b9b5c123743);
+            
+        
+
+        marker_716866f02f3cc33dbe98903aa8c0877d.bindPopup(popup_99bde3efb85fdec977c2999484236a4c)
+        ;
+
+        
+    
+    
+            marker_716866f02f3cc33dbe98903aa8c0877d.bindTooltip(
+                `<div>
+                     Чубарова, д. 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba7119ad441469f2a4d74d0d09f7051b = L.marker(
+                [53.07175, 158.61491],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_4831661e2a92cd7a7bb1e335c09079fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ba7119ad441469f2a4d74d0d09f7051b.setIcon(icon_4831661e2a92cd7a7bb1e335c09079fe);
+        
+    
+        var popup_82997680643af516756b3afe6660b20f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_015292c126023f8f96b0390ca564f8fc = $(`<div id="html_015292c126023f8f96b0390ca564f8fc" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_82997680643af516756b3afe6660b20f.setContent(html_015292c126023f8f96b0390ca564f8fc);
+            
+        
+
+        marker_ba7119ad441469f2a4d74d0d09f7051b.bindPopup(popup_82997680643af516756b3afe6660b20f)
+        ;
+
+        
+    
+    
+            marker_ba7119ad441469f2a4d74d0d09f7051b.bindTooltip(
+                `<div>
+                     Чубарова, д. 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6176d2cc8a32187e849552680d000c6 = L.marker(
+                [53.072124, 158.615314],
+                {}
+            ).addTo(map_f2a3b4335c16e33dcb93a083f0669d12);
+        
+    
+            var icon_ef9759049241f0427f310fdd4021ebd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a6176d2cc8a32187e849552680d000c6.setIcon(icon_ef9759049241f0427f310fdd4021ebd8);
+        
+    
+        var popup_56be41a6d4c58610fc5d72d05623027f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8ca565ab1911478bb2350d5337da45e3 = $(`<div id="html_8ca565ab1911478bb2350d5337da45e3" style="width: 100.0%; height: 100.0%;">Ограниченно работоспособное техническое состояние по ГОСТ 31937<br>Сейсмостойкость здания: 7-8<br>Зона по карте СМР: 9<br>Интенсивность: 6.0</div>`)[0];
+                popup_56be41a6d4c58610fc5d72d05623027f.setContent(html_8ca565ab1911478bb2350d5337da45e3);
+            
+        
+
+        marker_a6176d2cc8a32187e849552680d000c6.bindPopup(popup_56be41a6d4c58610fc5d72d05623027f)
+        ;
+
+        
+    
+    
+            marker_a6176d2cc8a32187e849552680d000c6.bindTooltip(
+                `<div>
+                     Чубарова, д. 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
